@@ -1,18 +1,18 @@
-.glowingLight {
-  position: absolute;
-  top: 34svh;
-  width: 15vw;
-  height: 14vh;
-  background-color: #fff;
-  box-shadow: 0 0 60px 30px #fff, 0 0 100px 30px #f6df17, 0 0 100px 30px #ffee00;
-  z-index: 0;
-  
+.doorContainer {
+  position: relative;
+  display: inline-block;
 }
 
-@media (min-width: 640px) {
-  .glowingLight {
-    top: 34svh;
-    width: 3.5vw;
-    height: 11vh;
-  }
+.glowingLight {
+  position: absolute;
+  top: 54%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70px;
+  height: 122px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 60px 30px #fff, 0 0 100px 30px #f6df17, 0 0 100px 30px #ffee00;
+  z-index: -1;
+  
 }

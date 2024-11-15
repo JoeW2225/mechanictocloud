@@ -29,9 +29,9 @@ export default function ThemeSwitch() {
             onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}
         >
             {resolvedTheme === 'dark' ? (
-                <Brightness3Icon className="text-gray-200 dark:text-gray-200 hover:text-gray-800 dark:hover:text-gray-800" />
+                <Brightness3Icon className="style={{color: '#faebd7'}} dark:style={{color: '#faebd7'}} hover:text-gray-800 dark:hover:text-gray-800" />
             ) : (
-                <LightModeIcon className="text-gray-800 dark:text-gray-200 hover:text-gray-200" />
+                <LightModeIcon className="style={{color: '#566056'}} dark:text-gray-200 hover:text-gray-200" />
             )}
         </button>
     )
