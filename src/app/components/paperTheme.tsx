@@ -6,6 +6,7 @@ import { ThemeProvider, useTheme } from '@mui/system';
 const PaperWithTheme = () => {
     const currentTheme = useTheme();
 
+
     return (
         <ThemeProvider theme={currentTheme}>
             
@@ -18,10 +19,10 @@ const PaperWithTheme = () => {
                         borderRadius: '10px',
                         fontFamily: 'platypi',
                         fontSize: 30,
-                        background: 'rgba(255, 255, 255, 0.2)',
-                        boxShadow: '0 8px 32px 0 rgba(31, 38, 135, 0.37)',
-                        backdropFilter: 'blur(3.5px)',
-                        WebkitBackdropFilter: 'blur(3.5px)',
+                        backgroundImage: `url(/images/exclusivePaper.webp)`,
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center',
+                        backgroundRepeat: 'no-repeat'
                     }}>
                     Welcome
                 </Paper>
