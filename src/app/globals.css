@@ -4,7 +4,7 @@
 
 @layer base {
   :root {
-    --foreground: 23 23 23;
+    --foreground: 86, 96, 86;
   }
 
   .dark {
@@ -14,9 +14,8 @@
 
 /* Light theme animation */
 body {
-  background: linear-gradient(90deg, #0094ff, #05d8ff, #ffff00);
+  background: linear-gradient(90deg, #d7f1d7, #d7f1d7, #d7f1d7);
   background-size: 300% 300%;
-  animation: gradient 4s alternate infinite;
   min-height: 100vh;
   width: 100%;
   @apply text-[rgb(var(--foreground))];
@@ -24,23 +23,18 @@ body {
 
 /* Dark theme animation */
 :root[class~="dark"] body {
-  background: linear-gradient(90deg, #000216, #1a0036, #220000);
+  background: #1b361b;
   background-size: 300% 300%;
-  animation: gradient 4s alternate infinite;
+  color: antiquewhite;
+
   .MuiBreadcrumbs-separator {
     color: antiquewhite;
   }
   .MuiTypography-root {
     color: antiquewhite;
   }
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 0%;
-  }
-  100% {
-    background-position: 100%;
+  .MuiPaper-root {
+    color: antiquewhite;
   }
 }
 
