@@ -14,17 +14,19 @@ const PaperWithTheme = () => {
                 <Paper
                     elevation={24}
                     sx={{
-                        width: 400,
-                        height: 200,
+                        width: 300,
+                        height: 100,
                         borderRadius: '10px',
                         fontFamily: 'platypi',
                         fontSize: 30,
-                        backgroundImage: `url(/images/exclusivePaper.webp)`,
-                        backgroundSize: 'cover',
-                        backgroundPosition: 'center',
-                        backgroundRepeat: 'no-repeat'
+                        color: 'rgb(var(--foreground))',
+                        backgroundColor: 'rgb(var(--paper-bg))',
+                        display: 'flex',
+                        justifyContent: 'space-evenly',
+                        alignItems: 'center'
+                        
                     }}>
-                    Welcome
+                    Hello & Welcome
                 </Paper>
             
         </ThemeProvider>
