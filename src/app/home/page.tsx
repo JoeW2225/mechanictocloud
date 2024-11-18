@@ -4,8 +4,11 @@ import CloudGroup from '../components/CloudGroup';
 import { FooterCount } from '../components/footerCount'
 import * as React from 'react';
 import { ThemeProvider } from '@mui/system';
-import PaperWithTheme from '../components/paperTheme';
 import homeTheme from '../styles/homeTheme';
+import paperContainers from '@/app/styles/paperContainers.module.css'
+import WelcomePaper from '../components/papers/homeOne';
+import NamePaper from '../components/papers/homeTwo';
+import IntroPaper from '../components/papers/homeThree';
 
 
 export default function Homepage() {
@@ -15,15 +18,20 @@ export default function Homepage() {
             <CloudGroup/>
             <ThemeProvider theme={homeTheme}>
                 <main>
+                    <div className={paperContainers.pContainer}>
+                        <WelcomePaper />
+                        <NamePaper />
+                        <IntroPaper />
+                    </div>
                     
-                    <PaperWithTheme />
                     
                 </main>
             </ThemeProvider>
-            <footer className='absolute inset-x-0 bottom-0'>
+            <footer className='fixed bottom-0 flex justify-center items-center w-full h-20'>
                 <FooterCount/>
             </footer>
-        </>
+            </>
+        
     )
 }
 

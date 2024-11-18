@@ -6,13 +6,15 @@ import LibraryBooksIcon from '@mui/icons-material/LibraryBooks';
 import PaletteIcon from '@mui/icons-material/Palette';
 import BungalowIcon from '@mui/icons-material/Bungalow';
 import ThemeSwitch from './ThemeSwitch'
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 export default function IconBreadcrumbs() {
     return (
     <div>
         <Breadcrumbs aria-label="breadcrumb">
 
-            <Link className='p-1 rounded-lg hover:bg-gray-100 dark:hover:bg-black transition-colors'
+            <Link className='p-1 rounded-lg hover:bg-white dark:hover:bg-black transition-colors'
                 underline="none"
                 sx={{ 
                     display: 'flex', 
@@ -60,9 +62,12 @@ export default function IconBreadcrumbs() {
                 href="/journal">
                 <LibraryBooksIcon sx={{ mr: 0.5 }} fontSize="inherit" />
                 Journal
-            </Link>
-
-            <ThemeSwitch/> 
+            </Link> 
+            <div>
+            <a className='p-2 rounded-lg hover:bg-white dark:hover:bg-black transition-colors' href='https://www.linkedin.com/in/joe-winter24/'><LinkedInIcon /></a>
+            <a className='p-2 rounded-lg hover:bg-white dark:hover:bg-black transition-colors' href='https://github.com/JoeW2225'><GitHubIcon /></a>
+            </div>
+            <ThemeSwitch/>
         </Breadcrumbs>
         
     </div>
