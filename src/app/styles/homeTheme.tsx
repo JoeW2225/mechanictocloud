@@ -3,14 +3,14 @@ import { createTheme } from '@mui/material/styles';
 const homeTheme = createTheme({
     palette: {
         primary: {
-            light: '#90a4ae',
-            main: '#ff3d00',
-            dark: '#90a4ae',
+            light: '#faebd7', // antique-white
+            main: '#566056', // MUI grey
+            dark: '#173A5E', // dark blue
         },
         secondary: {
-            light: '#90a4ae',
-            main: '#90a4ae',
-            dark: '#90a4ae',
+            light: '#faebd7',
+            main: '#566056',
+            dark: '#173A5E',
         },
     },
 });
