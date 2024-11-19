@@ -30,7 +30,10 @@ const IntroPaper = () => {
                         fontFamily: 'platypi',
                         fontSize: 30,
                         color: 'rgb(var(--foreground))',
-                        backgroundColor: 'rgb(var(--paper-bg))',
+                        background: 'rgba(255, 255, 255, 0.80)',
+                        boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)', 
+                        backdropFilter: 'blur(4px)',
+                        WebkitBackdropFilter: 'blur(4px)',
                     }}>
                         Here&#39;s my introduction
 
@@ -42,8 +45,8 @@ const IntroPaper = () => {
                             gap: 2,
                             width: 800,
                             boxShadow: 'none',
-                            backgroundColor: 'rgb(var(--paper-bg))', 
-                            color: 'primary.dark', 
+                            backgroundColor: 'transparent', 
+                            color: 'rgb(var(--textColorLight))', 
                             fontSize: 16
                             }}>
                             <ArticleIcon />
