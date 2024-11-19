@@ -27,7 +27,7 @@ export default function Homepage() {
                     
                 </main>
             </ThemeProvider>
-            <footer className='fixed bottom-0 flex justify-center items-center w-full h-20'>
+            <footer className='sticky bottom-0 flex justify-center items-center w-full h-20 z-10'>
                 <FooterCount/>
             </footer>
             </>

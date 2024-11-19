@@ -26,7 +26,10 @@ const NamePaper = () => {
                         fontFamily: 'platypi',
                         fontSize: 30,
                         color: 'rgb(var(--foreground))',
-                        backgroundColor: 'rgb(var(--paper-bg))',
+                        background: 'rgba(255, 255, 255, 0.80)',
+                        boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)', 
+                        backdropFilter: 'blur(4px)',
+                        WebkitBackdropFilter: 'blur(4px)',
                     }}>
                         My name is Joe Winter
 
@@ -37,12 +40,12 @@ const NamePaper = () => {
                             flexDirection: 'row',
                             gap: 2,
                             width: 300,
-                            boxShadow: 'none',
-                            backgroundColor: 'rgb(var(--paper-bg))', 
-                            color: 'primary.dark', 
+                            background: 'none', 
+                            boxShadow: 'none', 
+                            color: 'rgb(var(--textColorLight))', 
                             fontSize: 16
                             }}>
-                            <LayersIcon /> a Full-Stack Web Developer
+                            <LayersIcon />Full-Stack Web Developer
                         </Paper>
                     
                 </Paper>

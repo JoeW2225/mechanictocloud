@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import doorGlow from '@/app/styles/doorGlow.module.css'
 import CloudGroup from './components/CloudGroup';
+import { FooterCount } from '@/app/components/footerCount'
 
 export default function Home() {
   return (
@@ -15,6 +16,9 @@ export default function Home() {
           </div>
         </div>
       </main>
+      <footer className='sticky bottom-0 flex justify-center items-center w-full h-20 z-10 mt-28'>
+        <FooterCount/>
+      </footer>
     </>
   );
 }
