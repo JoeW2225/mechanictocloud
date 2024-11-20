@@ -2,6 +2,7 @@ import cloudAni from '@/app/styles/cloudAni.module.css'
 
 export default function CloudGroup() {
     return(
+        
     <div className={cloudAni.backgroundWrap}>
         <div className={cloudAni.x1}>
             <div className={cloudAni.cloud}></div>
@@ -23,5 +24,6 @@ export default function CloudGroup() {
             <div className={cloudAni.cloud}></div>
         </div>
     </div>
+    
     )
 }

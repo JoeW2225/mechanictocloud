@@ -6,9 +6,9 @@ import * as React from 'react';
 import { ThemeProvider } from '@mui/system';
 import homeTheme from '../styles/homeTheme';
 import paperContainers from '@/app/styles/paperContainers.module.css'
-import WelcomePaper from '../components/papers/homeOne';
-import NamePaper from '../components/papers/homeTwo';
-import IntroPaper from '../components/papers/homeThree';
+import GrowWelcome from '../components/papers/homeOne';
+import GrowName from '../components/papers/homeTwo';
+import GrowIntro from '../components/papers/homeThree';
 
 
 export default function Homepage() {
@@ -19,9 +19,9 @@ export default function Homepage() {
             <ThemeProvider theme={homeTheme}>
                 <main>
                     <div className={paperContainers.pContainer}>
-                        <WelcomePaper />
-                        <NamePaper />
-                        <IntroPaper />
+                        <GrowWelcome />
+                        <GrowName />
+                        <GrowIntro />
                     </div>
                     
                     

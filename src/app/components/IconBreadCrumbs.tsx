@@ -14,7 +14,7 @@ export default function IconBreadcrumbs() {
     <div>
         <Breadcrumbs aria-label="breadcrumb">
 
-            <Link className='p-1 rounded-lg hover:bg-white dark:hover:bg-black transition-colors'
+            <Link className='p-1 rounded-lg hover:bg-blue-200 dark:hover:bg-white transition-colors'
                 underline="none"
                 sx={{ 
                     display: 'flex', 
@@ -27,7 +27,7 @@ export default function IconBreadcrumbs() {
                 Mechanic to Cloud
             </Link>
 
-            <Link className='p-1 rounded-lg hover:bg-gray-100 dark:hover:bg-black transition-colors'
+            <Link className='p-1 rounded-lg hover:bg-blue-200 dark:hover:bg-white transition-colors'
                 underline='none'
                 sx={{ display: 'flex', 
                     alignItems: 'center',
@@ -39,7 +39,7 @@ export default function IconBreadcrumbs() {
                 About
             </Link>
 
-            <Link className='p-1 rounded-lg hover:bg-gray-100 dark:hover:bg-black transition-colors'
+            <Link className='p-1 rounded-lg hover:bg-blue-200 dark:hover:bg-white transition-colors'
                 underline="none"
                 sx={{ display: 'flex', 
                     alignItems: 'center',
@@ -52,7 +52,7 @@ export default function IconBreadcrumbs() {
                 Projects
             </Link>
 
-            <Link className='p-1 rounded-lg hover:bg-gray-100 dark:hover:bg-black transition-colors'
+            <Link className='p-1 rounded-lg hover:bg-blue-200 dark:hover:bg-white transition-colors'
                 underline="none"
                 sx={{ display: 'flex', 
                     alignItems: 'center',
@@ -64,8 +64,8 @@ export default function IconBreadcrumbs() {
                 Journal
             </Link> 
             <div>
-            <a className='p-2 rounded-lg hover:bg-white dark:hover:bg-black transition-colors' href='https://www.linkedin.com/in/joe-winter24/'><LinkedInIcon /></a>
-            <a className='p-2 rounded-lg hover:bg-white dark:hover:bg-black transition-colors' href='https://github.com/JoeW2225'><GitHubIcon /></a>
+            <a className='p-2 rounded-lg hover:bg-blue-200 dark:hover:bg-white transition-colors' href='https://www.linkedin.com/in/joe-winter24/'><LinkedInIcon /></a>
+            <a className='p-2 rounded-lg hover:bg-blue-200 dark:hover:bg-white transition-colors' href='https://github.com/JoeW2225'><GitHubIcon /></a>
             </div>
             <ThemeSwitch/>
         </Breadcrumbs>

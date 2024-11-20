@@ -1,7 +1,9 @@
 'use client'
 import * as React from 'react';
 import Paper from '@mui/material/Paper';
+import { Grow, Box } from '@mui/material';
 import { ThemeProvider } from '@mui/system';
+import { useEffect } from 'react';
 import homeTheme from '@/app/styles/homeTheme';
 import ArticleIcon from '@mui/icons-material/Article';
 import { Introduction } from '@/app/library/introTxt';
@@ -10,9 +12,8 @@ import PersonAddIcon from '@mui/icons-material/PersonAdd';
 import { IntroductionTwo } from '@/app/library/introTxtTwo';
 
 
-const IntroPaper = () => {
+const introPaper = (
 
-    return (
         <ThemeProvider theme={homeTheme}>
             
                 
@@ -59,7 +60,35 @@ const IntroPaper = () => {
                 </Paper>
             
         </ThemeProvider>
-    );
-};
+    
+)
 
-export default IntroPaper
+export default function GrowIntro() {
+    const [checked, setChecked] = React.useState(false)
+
+    useEffect(() => {
+        setChecked(true)
+    },[])
+    return (
+        <>
+        <Box sx={{
+                height: 'auto', 
+                minHeight: '300px',
+                display: 'flex',
+                justifyContent: 'center',
+                position: 'absolute',
+                zIndex: -10,
+        }}>
+        </Box>
+        <Grow
+        in={checked}
+        timeout={3000}
+        style={{transformOrigin: 'center center'}}
+        >
+            <div>
+                {introPaper}
+            </div>
+        </Grow>
+        </>
+    )
+}

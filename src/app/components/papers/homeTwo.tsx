@@ -1,14 +1,15 @@
 'use client'
 import * as React from 'react';
+import { useEffect } from 'react';
 import Paper from '@mui/material/Paper';
 import { ThemeProvider } from '@mui/system';
+import { Grow, Box } from '@mui/material';
 import homeTheme from '@/app/styles/homeTheme';
 import LayersIcon from '@mui/icons-material/Layers';
 
 
-const NamePaper = () => {
+const namePaper = (
 
-    return (
         <ThemeProvider theme={homeTheme}>
             
                 
@@ -51,7 +52,37 @@ const NamePaper = () => {
                 </Paper>
             
         </ThemeProvider>
-    );
-};
+    
+)
 
-export default NamePaper
+export default function GrowName() {
+    const [checked, setChecked] = React.useState(false)
+
+    useEffect(() => {
+        setChecked(true)
+    },[])
+
+    return (
+        <>
+            <Box
+            sx={{
+                height: 'auto', 
+                minHeight: '300px',
+                display: 'flex',
+                justifyContent: 'center',
+                position: 'absolute',
+                zIndex: -10,
+            }}>
+            </Box>
+            <Grow
+            in={checked}
+            timeout={2000}
+            style={{transformOrigin: 'center center'}}
+            >
+                <div>
+                    {namePaper}
+                </div>
+                </Grow>
+        </>
+    )
+}
