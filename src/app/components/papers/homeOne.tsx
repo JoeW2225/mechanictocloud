@@ -1,18 +1,19 @@
 'use client'
 import * as React from 'react';
+import { useEffect } from 'react';
 import Paper from '@mui/material/Paper';
-import { rgbToHex, ThemeProvider } from '@mui/system';
+import { ThemeProvider } from '@mui/system';
+import { Grow, Box } from '@mui/material';
 import homeTheme from '@/app/styles/homeTheme';
 import CloudIcon from '@mui/icons-material/Cloud';
 import DesignServicesIcon from '@mui/icons-material/DesignServices';
 import BrushIcon from '@mui/icons-material/Brush';
 import CodeIcon from '@mui/icons-material/Code';
 
-const WelcomePaper = () => {
+const welcomePaper = (
 
-    return (
+    
         <ThemeProvider theme={homeTheme}>
-            
                 
                 <Paper
                     elevation={24}
@@ -68,9 +69,43 @@ const WelcomePaper = () => {
                             <BrushIcon /> Tailwind & CSS
                         </Paper>
                 </Paper>
-            
+                
         </ThemeProvider>
-    );
-};
+    
+)
 
-export default WelcomePaper
+export default function GrowWelcome() {
+    // Set animation to false before component mount:
+    const [checked, setChecked] = React.useState(false)
+
+    // Trigger animation on mount:
+    useEffect(() => {
+        setChecked(true)
+    },[])
+
+    return (
+        <>
+        <Box 
+            sx={{ 
+                height: 'auto', 
+                minHeight: '300px',
+                display: 'flex',
+                justifyContent: 'center',
+                position: 'absolute',
+                zIndex: -10,
+            }}
+        ></Box>
+        <Grow
+        in={checked}
+        timeout={1000}
+        style={{ transformOrigin: 'center center' }}
+        >
+            <div>
+                {welcomePaper}
+            </div>
+            
+        </Grow>
+        </>
+    );
+
+}
