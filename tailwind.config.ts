@@ -11,6 +11,13 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        'frosted-bg': 'rgba(255, 255, 255, 0.8)',
+      },
+      boxShadow: {
+        'frosted-glass': '0 4px 30px rgba(0, 0, 0, 0.1)',
+      },
+      borderRadius: {
+        'xl': '16px',
       },
     },
   },
