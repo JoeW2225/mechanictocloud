@@ -1,5 +1,6 @@
 'use client'
 import { NavBar } from '../components/NavBar'
+import { MobNavBar } from '../components/mobile/MobNavBar';
 import CloudGroup from '../components/CloudGroup';
 import { FooterCount } from '../components/footerCount'
 import * as React from 'react';
@@ -14,7 +15,7 @@ import GrowIntro from '../components/papers/homeThree';
 export default function Homepage() {
     return (
         <>
-            <NavBar/>
+            <NavBar/> <MobNavBar/>
             <CloudGroup/>
             <ThemeProvider theme={homeTheme}>
                 <main>
