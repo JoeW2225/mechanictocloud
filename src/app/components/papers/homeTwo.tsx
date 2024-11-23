@@ -21,11 +21,26 @@ const namePaper = (
                         alignItems: 'center',
                         flexDirection: 'column',
                         margin: 1,
-                        width: 400,
-                        height: 150,
+                        // Responsive width:
+                        width: {
+                            xs: 350, 
+                            sm: 380, 
+                            md: 480, 
+                            },
+                        // Responsive height:
+                        height: {
+                            xs: 130,
+                            sm: 220,
+                            md: 250,
+                            },
                         borderRadius: '10px',
                         fontFamily: 'platypi',
-                        fontSize: 30,
+                        // Responsive font size for the title:
+                        fontSize: {
+                            xs: 24,
+                            sm: 26,
+                            md: 30,
+                            },
                         color: 'rgb(var(--foreground))',
                         background: 'rgba(255, 255, 255, 0.80)',
                         boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)', 
@@ -36,17 +51,36 @@ const namePaper = (
 
                         <Paper sx={{
                             display: 'flex',
-                            justifyContent: 'flex-start',
+                            justifyContent: 'center',
                             alignItems: 'center',
                             flexDirection: 'row',
-                            gap: 2,
-                            width: 300,
-                            background: 'none', 
-                            boxShadow: 'none', 
-                            color: 'rgb(var(--textColorLight))', 
-                            fontSize: 16
+                            // Responsive gap:
+                            gap: {
+                                xs: 1,
+                                sm: 1.5,
+                                md: 2,
+                            },
+                            width: {
+                                xs: 260,
+                                sm: 320,
+                                md: 400,
+                            },
+                            background: 'none',
+                            boxShadow: 'none',
+                            color: 'rgb(var(--textColorLight))',
+                            fontSize: {
+                                xs: 14,
+                                sm: 15,
+                                md: 16,
+                            },
                             }}>
-                            <LayersIcon />Full-Stack Web Developer
+                            <LayersIcon sx={{ 
+                                fontSize: {
+                                xs: '1.2rem',
+                                sm: '1.3rem',
+                                md: '1.5rem',
+                                }
+                            }} /> Full-Stack Web Developer
                         </Paper>
                     
                 </Paper>

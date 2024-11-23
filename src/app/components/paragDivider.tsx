@@ -4,12 +4,25 @@ import Box from '@mui/material/Box';
 const VerticalDivider = () => (
   <Box
     sx={{
-      width: '2px',
-      height: '170px',
+      // Width and height swap based on orientation
+      width: {
+        // Wide for horizontal on mobile:
+        xs: '170px',
+        // Thin for vertical on tablet+:
+        sm: '2px'
+      },
+      height: {
+        // Thin for horizontal on mobile:
+        xs: '2px',
+        // Tall for vertical on tablet+:
+        sm: '170px'
+      },
       backgroundColor: 'primary.dark',
-      filter: 'blur(0.5px)',
-      marginX: 1,
-      marginY: 2,
+      filter: 'blur(0.7px)',
+      margin: {
+        xs: '0',
+        sm: '16px 8px'
+      },
     }}
   />
 );
