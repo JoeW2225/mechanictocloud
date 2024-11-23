@@ -11,7 +11,7 @@ import BrushIcon from '@mui/icons-material/Brush';
 import CodeIcon from '@mui/icons-material/Code';
 
 const welcomePaper = (
-
+// MUI media-queries see README, or MUI breakpoints doc
     
         <ThemeProvider theme={homeTheme}>
                 
@@ -21,53 +21,182 @@ const welcomePaper = (
                         display: 'flex',
                         justifyContent: 'space-evenly',
                         alignItems: 'center',
-                        flexDirection: 'column',
+                        flexDirection: {
+                            xs: 'column',
+                            
+                        },
                         margin: 1,
-                        width: 480,
-                        height: 250,
+                        // Responsive width:
+                        width: {
+                        xs: 350, 
+                        sm: 380, 
+                        md: 680, 
+                        },
+                        // Responsive height:
+                        height: {
+                        xs: 200,
+                        sm: 220,
+                        md: 250,
+                        },
                         borderRadius: '10px',
                         fontFamily: 'platypi',
-                        fontSize: 30,
+                        // Responsive font size for the title:
+                        fontSize: {
+                        xs: 24,
+                        sm: 26,
+                        md: 30,
+                        },
                         color: 'rgb(var(--foreground))',
                         background: 'rgba(255, 255, 255, 0.80)',
-                        boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)', 
+                        boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
                         backdropFilter: 'blur(4px)',
                         WebkitBackdropFilter: 'blur(4px)',
-                    }}>
-                    Welcome to my Portfolio
-                    
-
+                        }}>
+                            Welcome to my Portfolio
+                <div className='flex'>
+                <div>
                     <Paper sx={{
                             display: 'flex',
                             justifyContent: 'center',
                             alignItems: 'center',
                             flexDirection: 'row',
-                            gap: 2,
-                            width: 400,
-                            background: 'none', 
+                            marginBottom: {
+                                md: 2,
+                            },
+                            // Responsive gap:
+                            gap: {
+                                xs: 1,
+                                sm: 1.5,
+                                md: 2,
+                            },
+                            width: {
+                                xs: 260,
+                                sm: 320,
+                                md: 400,
+                            },
+                            background: 'none',
                             boxShadow: 'none',
-                            color: 'rgb(var(--textColorLight))', 
-                            fontSize: 16
+                            color: 'rgb(var(--textColorLight))',
+                            fontSize: {
+                                xs: 14,
+                                sm: 15,
+                                md: 16,
+                            },
                             }}>
-                            <CloudIcon /> Hosted on AWS
-                            <CodeIcon /> Framework Next.js
+                            <CloudIcon sx={{ 
+                                fontSize: {
+                                xs: '1.2rem',
+                                sm: '1.3rem',
+                                md: '1.5rem',
+                                }
+                            }} /> Hosted on AWS
                         </Paper>
-                            
+
                         <Paper sx={{
                             display: 'flex',
                             justifyContent: 'center',
                             alignItems: 'center',
                             flexDirection: 'row',
-                            gap: 2,
-                            width: 380,
-                            background: 'none', 
-                            boxShadow: 'none', 
-                            color: 'rgb(var(--textColorLight))', 
-                            fontSize: 16
+                            // Responsive gap:
+                            gap: {
+                                xs: 1,
+                                sm: 1.5,
+                                md: 2,
+                            },
+                            width: {
+                                xs: 260,
+                                sm: 320,
+                                md: 400,
+                            },
+                            background: 'none',
+                            boxShadow: 'none',
+                            color: 'rgb(var(--textColorLight))',
+                            fontSize: {
+                                xs: 14,
+                                sm: 15,
+                                md: 16,
+                            },
                             }}>
-                            <DesignServicesIcon /> UI library MUI
-                            <BrushIcon /> Tailwind & CSS
+                            <CodeIcon sx={{ 
+                                fontSize: {
+                                xs: '1.2rem',
+                                sm: '1.3rem',
+                                md: '1.5rem',
+                                }
+                            }} /> Framework Next.js
+                            </Paper>
+                        </div>
+                        <div>
+                        <Paper sx={{
+                            display: 'flex',
+                            justifyContent: 'center',
+                            alignItems: 'center',
+                            flexDirection: 'row',
+                            marginBottom: {
+                                md: 2,
+                            },
+                            gap: {
+                                xs: 1,
+                                sm: 1.5,
+                                md: 2,
+                            },
+                            width: {
+                                xs: 240,
+                                sm: 300,
+                                md: 380,
+                            },
+                            background: 'none',
+                            boxShadow: 'none',
+                            color: 'rgb(var(--textColorLight))',
+                            fontSize: {
+                                xs: 14,
+                                sm: 15,
+                                md: 16,
+                            },
+                            }}>
+                            <DesignServicesIcon sx={{ 
+                                fontSize: {
+                                xs: '1.2rem',
+                                sm: '1.3rem',
+                                md: '1.5rem',
+                                }
+                            }} /> UI library MUI
                         </Paper>
+
+                        <Paper sx={{
+                            display: 'flex',
+                            justifyContent: 'center',
+                            alignItems: 'center',
+                            flexDirection: 'row',
+                            gap: {
+                                xs: 1,
+                                sm: 1.5,
+                                md: 2,
+                            },
+                            width: {
+                                xs: 240,
+                                sm: 300,
+                                md: 380,
+                            },
+                            background: 'none',
+                            boxShadow: 'none',
+                            color: 'rgb(var(--textColorLight))',
+                            fontSize: {
+                                xs: 14,
+                                sm: 15,
+                                md: 16,
+                            },
+                            }}>
+                            <BrushIcon sx={{ 
+                                fontSize: {
+                                xs: '1.2rem',
+                                sm: '1.3rem',
+                                md: '1.5rem',
+                                }
+                            }} /> Tailwind & CSS
+                        </Paper>
+                        </div>
+                    </div>
                 </Paper>
                 
         </ThemeProvider>
