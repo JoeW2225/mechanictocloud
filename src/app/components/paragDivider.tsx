@@ -20,8 +20,8 @@ const VerticalDivider = () => (
       backgroundColor: 'primary.dark',
       filter: 'blur(0.7px)',
       margin: {
-        xs: '0',
-        sm: '16px 8px'
+        xs: '16px 8px',
+        sm: '16px 20px'
       },
     }}
   />

@@ -2,31 +2,24 @@
 import * as React from 'react';
 import { useEffect } from 'react';
 import { Grow, Box } from '@mui/material';
-import Link from 'next/link'
-import doorGlow from '@/app/styles/doorGlow.module.css'
 
-
-const doorElement = (
-    
-        <div>
-            <div className='w-full flex justify-center'>
-                <div className={doorGlow.doorContainer}>
-                    <div className={doorGlow.glowingLight}></div>
-                    <Link className="relative p-5 text-9xl z-50" href={'/home'}>🚪</Link>
-                </div>
-            </div>
+const titleElement = (
+    <div>
+        <div className='flex justify-center my-20 w-full'>
+            <h1 className="flex relative justify-center p-5 h-[10vh] items-center platypi text-3xl bg-frosted-bg shadow-frosted-glass rounded-xl backdrop-blur-md sm:text-5xl min-w-min" >Mechanic to Cloud</h1>
         </div>
-    
+    </div>
 )
 
-export default function DoorTransition() {
+export default function TitleTransition() {
     const [checked, setChecked] = React.useState(false)
 
-    useEffect(() =>{
+    useEffect(() => {
         setChecked(true)
     },[])
-    return (
-        <>
+
+    return(
+        <div>
         <Box
         sx={{ 
                 height: 'auto', 
@@ -39,10 +32,11 @@ export default function DoorTransition() {
         </Box>
         <Grow
         in={checked}
-        timeout={5000}
+        timeout={3000}
         style={{transformOrigin: 'center center'}}
-        >{doorElement}
+        >{titleElement}
         </Grow>
-        </>
+        </div>
     )
 }
+
