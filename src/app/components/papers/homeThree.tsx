@@ -23,19 +23,22 @@ const introPaper = (
                         display: 'flex',
                         justifyContent: 'space-evenly',
                         alignItems: 'center',
-                        flexDirection: 'column',
+                        flexDirection: {
+                            xs: 'column',
+                            
+                        },                         
                         margin: 1,
                         // Responsive width:
                         width: {
                             xs: 350, 
                             sm: 380, 
-                            md: 480, 
+                            md: 900, 
                             },
                             // Responsive height:
                             height: {
-                            xs: 550,
+                            xs: 480,
                             sm: 220,
-                            md: 250,
+                            md: 350,
                             },
                         borderRadius: '10px',
                         fontFamily: 'platypi',
@@ -52,7 +55,7 @@ const introPaper = (
                         WebkitBackdropFilter: 'blur(4px)',
                     }}>
                         Here&#39;s my introduction
-
+                    <div className='flex flex-col items-center sm:flex-row'>
                         <Paper sx={{
                             display: 'flex',
                             justifyContent: 'center',
@@ -95,7 +98,7 @@ const introPaper = (
                         <Paper sx={{
                             display: 'flex',
                             justifyContent: 'center',
-                            alignItems: 'center',
+                            alignItems: 'flex-start',
                             flexDirection: 'row',
                             // Responsive gap:
                             gap: {
@@ -125,6 +128,7 @@ const introPaper = (
                                 }
                             }} /> <IntroductionTwo />
                         </Paper>
+                        </div>
                 </Paper>
             
         </ThemeProvider>

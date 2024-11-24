@@ -10,7 +10,7 @@
   }
 
   .dark {
-    --foreground: 86, 96, 86;/* MUI GREY */
+    --foreground: 86, 96, 86; /* MUI GREY */
     --paper-bg: 237 237 237; /* LIGHT GREY FOR TEXT */
     --textColorDark: 23, 58, 94, 1; /* DARK BLUE (works in dark-mode) */
   }
@@ -18,7 +18,7 @@
 
 /* Light theme animation */
 body {
-  background: linear-gradient(90deg, #d7f1d7, #d7f1d7, #d7f1d7);
+  background: linear-gradient(90deg, #cce9f9, #cce9f9, #cce9f9);
   background-size: 300% 300%;
   min-height: 100vh;
   width: 100%;
@@ -26,7 +26,7 @@ body {
 
 /* Dark theme animation */
 :root[class~="dark"] body {
-  background: #1b361b;
+  background: #02092f;
 
   .MuiBreadcrumbs-separator {
     color: rgb(var(--foreground));
@@ -34,7 +34,6 @@ body {
   .MuiTypography-root {
     color: rgb(var(--foreground));
   }
-  
 }
 
 .platypi {

@@ -31,7 +31,7 @@ const namePaper = (
                         height: {
                             xs: 130,
                             sm: 220,
-                            md: 250,
+                            md: 150,
                             },
                         borderRadius: '10px',
                         fontFamily: 'platypi',

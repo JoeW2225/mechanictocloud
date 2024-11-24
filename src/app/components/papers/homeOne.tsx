@@ -30,7 +30,7 @@ const welcomePaper = (
                         width: {
                         xs: 350, 
                         sm: 380, 
-                        md: 680, 
+                        md: 480, 
                         },
                         // Responsive height:
                         height: {
@@ -53,7 +53,7 @@ const welcomePaper = (
                         WebkitBackdropFilter: 'blur(4px)',
                         }}>
                             Welcome to my Portfolio
-                <div className='flex'>
+                <div>
                 <div>
                     <Paper sx={{
                             display: 'flex',
@@ -61,7 +61,7 @@ const welcomePaper = (
                             alignItems: 'center',
                             flexDirection: 'row',
                             marginBottom: {
-                                md: 2,
+                                xs: 1,
                             },
                             // Responsive gap:
                             gap: {
@@ -97,6 +97,9 @@ const welcomePaper = (
                             justifyContent: 'center',
                             alignItems: 'center',
                             flexDirection: 'row',
+                            marginBottom: {
+                                xs: 1,
+                            },
                             // Responsive gap:
                             gap: {
                                 xs: 1,
@@ -133,7 +136,7 @@ const welcomePaper = (
                             alignItems: 'center',
                             flexDirection: 'row',
                             marginBottom: {
-                                md: 2,
+                                xs: 1,
                             },
                             gap: {
                                 xs: 1,
