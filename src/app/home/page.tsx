@@ -7,9 +7,9 @@ import * as React from 'react';
 import { ThemeProvider } from '@mui/system';
 import homeTheme from '../styles/homeTheme';
 import paperContainers from '@/app/styles/paperContainers.module.css'
-import GrowWelcome from '../components/papers/homeOne';
-import GrowName from '../components/papers/homeTwo';
-import GrowIntro from '../components/papers/homeThree';
+import GrowWelcome from '../components/papers/home_papers/homeOne';
+import GrowName from '../components/papers/home_papers/homeTwo';
+import GrowIntro from '../components/papers/home_papers/homeThree';
 
 
 export default function Homepage() {
