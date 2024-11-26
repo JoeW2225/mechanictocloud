@@ -30,14 +30,12 @@ const aboutPaper = (
                         // Responsive width:
                         width: {
                         xs: 'auto',
-                        sm: 380, 
-                        md: 480, 
+                        
                         },
                         // Responsive height:
                         height: {
                         xs: 'auto',
-                        sm: 220,
-                        md: 250,
+                        
                         },
                         borderRadius: '10px',
                         fontFamily: 'platypi',

@@ -6,7 +6,7 @@ import { ThemeProvider } from '@mui/system';
 import { useEffect } from 'react';
 import homeTheme from '@/app/styles/homeTheme';
 import ArchitectureIcon from '@mui/icons-material/Architecture';
-import VerticalDivider from'@/app/components/paragDivider';
+import HorizontalDivider from '../../paragDividerH';
 import TrendingUpIcon from '@mui/icons-material/TrendingUp';
 import { PresentOne } from '@/app/library/aboutTxtSix';
 import { PresentTwo } from '@/app/library/aboutTxtSeven';
@@ -17,29 +17,26 @@ const presentPaper = (
         <ThemeProvider theme={homeTheme}>
             
                 
-                <Paper
+            <Paper
                     elevation={24}
                     sx={{
                         display: 'flex',
-                        justifyContent: 'space-evenly',
+                        justifyContent: 'center',
                         alignItems: 'center',
                         flexDirection: {
                             xs: 'column',
-                            
-                        },                         
+                        },
                         margin: 1,
                         padding: 3,
                         // Responsive width:
                         width: {
                             xs: 'auto',
-                            sm: 380, 
-                            md: 480, 
+                            
                             },
                         // Responsive height:
                         height: {
                             xs: 'auto',
-                            sm: 220,
-                            md: 150,
+                            
                             },
                         borderRadius: '10px',
                         fontFamily: 'platypi',
@@ -70,9 +67,8 @@ const presentPaper = (
                                 md: 2,
                             },
                             width: {
-                                xs: 260,
-                                sm: 320,
-                                md: 400,
+                                xs: 'auto',
+                                
                             },
                             background: 'none',
                             boxShadow: 'none',
@@ -83,17 +79,17 @@ const presentPaper = (
                                 md: 16,
                             },
                             }}>
-                            <ArchitectureIcon sx={{
-                                
+                            <ArchitectureIcon sx={{ 
                                 fontSize: {
                                 xs: '1.2rem',
                                 sm: '1.3rem',
                                 md: '1.5rem',
                                 }
-                            }} /> <PresentOne />
+                            }} />
+                            <PresentOne />
                         </Paper>
 
-                        <VerticalDivider />
+                        <HorizontalDivider />
 
                         <Paper sx={{
                             display: 'flex',
@@ -107,9 +103,7 @@ const presentPaper = (
                                 md: 2,
                             },
                             width: {
-                                xs: 260,
-                                sm: 320,
-                                md: 400,
+                                xs: 'auto'
                             },
                             background: 'none',
                             boxShadow: 'none',

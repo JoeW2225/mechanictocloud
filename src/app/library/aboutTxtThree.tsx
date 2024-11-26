@@ -1,8 +1,8 @@
 export const PastThree = () => {
     return (
-        <div className="flex flex-col gap-4 sm:">
-            <div className="flex flex-wrap w-[60vw] mr-5 bg-none">
-            I embarked on my cloud journey by joining an academy group which helped me delve into the fundamentals of AWS. 
+        <div className="flex flex-col gap-4 sm:w-fit max-w-[100ch]">
+            <div className="w-fit bg-none flex justify-center">
+            I commenced on my cloud journey by joining an academy group which helped me delve into the fundamentals of AWS. 
             This led me to successfully complete the AWS Certified Cloud Practitioner (CCP) certification in February 2024. 
             While initially eager to pursue the Solutions Architect (SA) certification, 
             I soon discovered the importance of gaining experience working with AWS Cloud before attempting it.
