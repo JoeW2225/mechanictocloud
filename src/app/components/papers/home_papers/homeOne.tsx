@@ -23,20 +23,18 @@ const welcomePaper = (
                         alignItems: 'center',
                         flexDirection: {
                             xs: 'column',
-                            
                         },
                         margin: 1,
+                        padding: 2,
                         // Responsive width:
                         width: {
-                        xs: 350, 
-                        sm: 380, 
-                        md: 480, 
+                        xs: 'auto',
+                        
                         },
                         // Responsive height:
                         height: {
-                        xs: 200,
-                        sm: 220,
-                        md: 250,
+                        xs: 'auto',
+                        
                         },
                         borderRadius: '10px',
                         fontFamily: 'platypi',
@@ -55,11 +53,12 @@ const welcomePaper = (
                             Welcome to my Portfolio
                 <div>
                 <div>
-                    <Paper sx={{
+                <Paper sx={{
                             display: 'flex',
                             justifyContent: 'center',
                             alignItems: 'center',
                             flexDirection: 'row',
+                            marginTop: 3,
                             marginBottom: {
                                 xs: 1,
                             },

@@ -10,7 +10,7 @@ import burgerMenuStyle from '@/app/styles/burgerMenuStyle.module.css'
 
 const pages = [
   { title: "Mechanic to Cloud", href:'/home', Icon: BungalowIcon },
-  { title: "About", href:'/home', Icon: InfoIcon }, 
+  { title: "About", href:'/about', Icon: InfoIcon }, 
   { title: "Projects", href:'/projects', Icon: PaletteIcon }, 
   { title: "Journal", href:'/journal', Icon: LibraryBooksIcon },  
 ]

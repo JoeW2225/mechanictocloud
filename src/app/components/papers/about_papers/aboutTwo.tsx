@@ -15,7 +15,7 @@ import AltRouteIcon from '@mui/icons-material/AltRoute';
 import CloudIcon from '@mui/icons-material/Cloud';
 import CodeIcon from '@mui/icons-material/Code';
 import UpgradeIcon from '@mui/icons-material/Upgrade';
-import VerticalDivider from'@/app/components/paragDivider';
+import HorizontalDivider from '../../paragDividerH';
 
 
 const pastPaper = (
@@ -37,14 +37,12 @@ const pastPaper = (
                         // Responsive width:
                         width: {
                             xs: 'auto',
-                            sm: 380, 
-                            md: 480, 
+                            
                             },
                         // Responsive height:
                         height: {
                             xs: 'auto',
-                            sm: 220,
-                            md: 150,
+                            
                             },
                         borderRadius: '10px',
                         fontFamily: 'platypi',
@@ -75,9 +73,8 @@ const pastPaper = (
                                 md: 2,
                             },
                             width: {
-                                xs: 300,
-                                sm: 320,
-                                md: 400,
+                                xs: 'auto',
+                                
                             },
                             background: 'none',
                             boxShadow: 'none',
@@ -98,7 +95,7 @@ const pastPaper = (
                             <PastOne />
                         </Paper>
 
-                        <VerticalDivider />
+                        <HorizontalDivider />
 
                         <Paper sx={{
                             display: 'flex',
@@ -112,9 +109,7 @@ const pastPaper = (
                                 md: 2,
                             },
                             width: {
-                                xs: 300,
-                                sm: 320,
-                                md: 400,
+                                xs: 'auto',
                             },
                             background: 'none',
                             boxShadow: 'none',
@@ -135,7 +130,7 @@ const pastPaper = (
                             <PastTwo />
                         </Paper>
 
-                        <VerticalDivider />
+                        <HorizontalDivider />
 
                         <Paper sx={{
                             display: 'flex',
@@ -149,9 +144,7 @@ const pastPaper = (
                                 md: 2,
                             },
                             width: {
-                                xs: 300,
-                                sm: 320,
-                                md: 400,
+                                xs: 'auto',
                             },
                             background: 'none',
                             boxShadow: 'none',
@@ -172,7 +165,7 @@ const pastPaper = (
                             <PastThree />
                         </Paper>
 
-                        <VerticalDivider />
+                        <HorizontalDivider />
 
                         <Paper sx={{
                             display: 'flex',
@@ -186,9 +179,7 @@ const pastPaper = (
                                 md: 2,
                             },
                             width: {
-                                xs: 300,
-                                sm: 320,
-                                md: 400,
+                                xs: 'auto',
                             },
                             background: 'none',
                             boxShadow: 'none',
@@ -209,7 +200,7 @@ const pastPaper = (
                             <PastFour />
                         </Paper>
 
-                        <VerticalDivider />
+                        <HorizontalDivider />
 
                         <Paper sx={{
                             display: 'flex',
@@ -223,9 +214,7 @@ const pastPaper = (
                                 md: 2,
                             },
                             width: {
-                                xs: 300,
-                                sm: 320,
-                                md: 400,
+                                xs: 'auto',
                             },
                             background: 'none',
                             boxShadow: 'none',

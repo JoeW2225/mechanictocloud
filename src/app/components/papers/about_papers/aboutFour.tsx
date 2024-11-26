@@ -27,14 +27,12 @@ const futurePaper = (
                         // Responsive width:
                         width: {
                             xs: 'auto',
-                            sm: 380, 
-                            md: 480, 
+                            
                             },
                         // Responsive height:
                         height: {
                             xs: 'auto',
-                            sm: 220,
-                            md: 150,
+                            
                             },
                         borderRadius: '10px',
                         fontFamily: 'platypi',
@@ -65,9 +63,7 @@ const futurePaper = (
                                 md: 2,
                             },
                             width: {
-                                xs: 300,
-                                sm: 320,
-                                md: 400,
+                                xs: 'auto'
                             },
                             background: 'none',
                             boxShadow: 'none',

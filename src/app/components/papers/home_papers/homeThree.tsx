@@ -7,7 +7,7 @@ import { useEffect } from 'react';
 import homeTheme from '@/app/styles/homeTheme';
 import ArticleIcon from '@mui/icons-material/Article';
 import { Introduction } from '@/app/library/introTxt';
-import VerticalDivider from'@/app/components/paragDivider';
+import VerticalDivider from'@/app/components/paragDividerV';
 import PersonAddIcon from '@mui/icons-material/PersonAdd';
 import { IntroductionTwo } from '@/app/library/introTxtTwo';
 
@@ -17,7 +17,7 @@ const introPaper = (
         <ThemeProvider theme={homeTheme}>
             
                 
-                <Paper
+            <Paper
                     elevation={24}
                     sx={{
                         display: 'flex',
@@ -25,42 +25,44 @@ const introPaper = (
                         alignItems: 'center',
                         flexDirection: {
                             xs: 'column',
-                            
-                        },                         
+                        },
                         margin: 1,
+                        padding: 2,
                         // Responsive width:
                         width: {
-                            xs: 350, 
-                            sm: 380, 
-                            md: 900, 
-                            },
-                            // Responsive height:
-                            height: {
-                            xs: 480,
-                            sm: 220,
-                            md: 350,
-                            },
+                        xs: 'auto',
+                        
+                        },
+                        // Responsive height:
+                        height: {
+                        xs: 'auto',
+                        
+                        },
                         borderRadius: '10px',
                         fontFamily: 'platypi',
                         // Responsive font size for the title:
                         fontSize: {
-                            xs: 24,
-                            sm: 26,
-                            md: 30,
-                            },
+                        xs: 24,
+                        sm: 26,
+                        md: 30,
+                        },
                         color: 'rgb(var(--foreground))',
                         background: 'rgba(255, 255, 255, 0.80)',
-                        boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)', 
+                        boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
                         backdropFilter: 'blur(4px)',
                         WebkitBackdropFilter: 'blur(4px)',
-                    }}>
+                        }}>
                         Here&#39;s my introduction
                     <div className='flex flex-col items-center sm:flex-row'>
-                        <Paper sx={{
+                    <Paper sx={{
                             display: 'flex',
                             justifyContent: 'center',
                             alignItems: 'flex-start',
                             flexDirection: 'row',
+                            marginTop: 3,
+                            marginBottom: {
+                                xs: 1,
+                            },
                             // Responsive gap:
                             gap: {
                                 xs: 1,
