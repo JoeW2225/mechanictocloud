@@ -7,7 +7,7 @@ import * as React from 'react';
 import { ThemeProvider } from '@mui/system';
 import homeTheme from '../styles/homeTheme';
 import ProjectAccordions from '../components/ProjectAccord';
-import paperContainers from '@/app/styles/paperContainers.module.css'
+import containers from '@/app/styles/containers.module.css';
 
 export default function Projects() {
     return (
@@ -16,7 +16,7 @@ export default function Projects() {
             <CloudGroup/>
             <ThemeProvider theme={homeTheme}>
                 <main>
-                <div className={paperContainers.accordContainer}>
+                <div className={containers.accordContainer}>
                         <ProjectAccordions />
                     </div>
                 </main>
