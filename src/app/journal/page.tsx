@@ -7,7 +7,9 @@ import * as React from 'react';
 import { ThemeProvider } from '@mui/system';
 import homeTheme from '../styles/homeTheme';
 import containers from '@/app/styles/containers.module.css';
-import JournalCards from '@/app/components/JournalCards';
+import FirstProjectCard from '@/app/components/journal_cards/FirstProject';
+import WebsitePlanningCard from '../components/journal_cards/WebsitePlanning';
+import WebsiteDesigningCard from '../components/journal_cards/WebsiteDesigning';
 
 export default function Projects() {
     return (
@@ -16,8 +18,10 @@ export default function Projects() {
             <CloudGroup/>
             <ThemeProvider theme={homeTheme}>
                 <main>
-                <div className={containers.accordContainer}>
-                        <JournalCards />
+                <div className={containers.cardsContainer}>
+                        <FirstProjectCard />
+                        <WebsitePlanningCard />
+                        <WebsiteDesigningCard />
                     </div>
                 </main>
             </ThemeProvider>

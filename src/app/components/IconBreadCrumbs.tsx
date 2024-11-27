@@ -19,7 +19,7 @@ export default function IconBreadcrumbs() {
                 sx={{ 
                     display: 'flex', 
                     alignItems: 'center',
-                    color: "inherit",
+                    color: "rgb(86, 96, 86)",
                     fontFamily: 'platypi'
                 }}
                 href="/home">
@@ -31,7 +31,7 @@ export default function IconBreadcrumbs() {
                 underline='none'
                 sx={{ display: 'flex', 
                     alignItems: 'center',
-                    color: "inherit",
+                    color: "rgb(86, 96, 86)",
                     fontFamily: 'platypi',
                 }}
                 href="/about">
@@ -43,7 +43,7 @@ export default function IconBreadcrumbs() {
                 underline="none"
                 sx={{ display: 'flex', 
                     alignItems: 'center',
-                    color: "inherit",
+                    color: "rgb(86, 96, 86)",
                     fontFamily: 'platypi',
                 }}
                 
@@ -56,7 +56,7 @@ export default function IconBreadcrumbs() {
                 underline="none"
                 sx={{ display: 'flex', 
                     alignItems: 'center',
-                    color: "inherit",
+                    color: "rgb(86, 96, 86)",
                     fontFamily: 'platypi',
                 }}
                 href="/journal">

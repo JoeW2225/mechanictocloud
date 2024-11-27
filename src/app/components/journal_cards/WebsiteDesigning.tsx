@@ -1,6 +1,8 @@
 'use client'
 import * as React from 'react';
 import { styled } from '@mui/material/styles';
+import { ThemeProvider } from '@mui/system';
+import homeTheme from '@/app/styles/homeTheme';
 import Card from '@mui/material/Card';
 import CardHeader from '@mui/material/CardHeader';
 import CardMedia from '@mui/material/CardMedia';
@@ -10,16 +12,16 @@ import Collapse from '@mui/material/Collapse';
 import Avatar from '@mui/material/Avatar';
 import IconButton, { IconButtonProps } from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
-import { pink } from '@mui/material/colors';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import AddToQueueIcon from '@mui/icons-material/AddToQueue';
+import * as Designing from '@/app/library/journal_card_content/websiteDesigningTxt'
 
 interface ExpandMoreProps extends IconButtonProps {
     expand: boolean;
 }
 
 const ExpandMore = styled((props: ExpandMoreProps) => {
-    const { expand, ...other } = props;
+    const { ...other } = props;
     return <IconButton {...other} />;
     })(({ theme }) => ({
     marginLeft: 'auto',
@@ -42,7 +44,7 @@ const ExpandMore = styled((props: ExpandMoreProps) => {
     ],
 }));
 
-export default function RecipeReviewCard() {
+export default function WebsiteDesigningCard() {
     const [expanded, setExpanded] = React.useState(false);
 
     const handleExpandClick = () => {
@@ -50,6 +52,7 @@ export default function RecipeReviewCard() {
     };
 
     return (
+        <ThemeProvider theme={homeTheme}>
         <Card sx={{ maxWidth: 380 }}>
         <CardHeader sx={{ 
             '.MuiCardHeader-title':{
@@ -59,7 +62,7 @@ export default function RecipeReviewCard() {
             }, 
             '.MuiCardHeader-subheader': {
                 fontFamily: 'platypi',
-                color: 'rgb(var(--textColorLight))'
+                color: 'rgba(23, 58, 94, 1)'
             }  
         }}
 
@@ -79,7 +82,8 @@ export default function RecipeReviewCard() {
         />
         <CardContent>
             <Typography variant="body2" sx={{ fontFamily: 'platypi', color: 'rgb(var(--foreground))' }}>
-            Cloud Resume Challenge:<br></br> After completing my Software Developer course, this is my first, true, independent project. 
+            Cloud Resume Challenge:<br></br> 
+            After completing my Software Developer course, this is my first, true, independent project. 
             I am looking forward to putting the skills and lessons learnt into practice.  
             </Typography>
         </CardContent>
@@ -100,34 +104,19 @@ export default function RecipeReviewCard() {
             <Typography sx={{ 
                 marginBottom: 2, 
                 fontFamily: 'platypi', 
-                color: 'rgb(var(--textColorLight))' 
-                }}>The Approach</Typography>
-
-            <Typography sx={{ marginBottom: 2 }}>
-            This wasn&#39;t my first attempt at the Cloud Resume Challenge (CRC). I had started a few months back,
-            having got to the stage of learning how I could deploy my Cloud set-up as IaaC (using Terraform).
-            </Typography>
-
-            <Typography sx={{ marginBottom: 2 }}>
-            However, I had stopped due to a fantastic opportunity to push my journey further into the tech world 
-            by enrolling in a 12 week Software Developer course (with the Tech Educators). 
-            I would come to learn many aspects about full stack web development from the basics of
-            JS, HTML, CSS, relational databases to React, Next and authentication tools like Clerk.
-            </Typography>
-
-            <Typography sx={{ marginBottom: 2 }}>
-            This was a pretty intense course and coming from no coding experience what-so-ever, 
-            proved to be a tough challenge indeed. The skills, knowledge and resources that I 
-            had gathered from doing this course would be invaluable for when I was to go back to doing the CRC.
-            </Typography>
-
-            <Typography>
-                Set aside off of the heat to let rest for 10 minutes, and then serve.
-            </Typography>
+                color: 'rgb(var(--foreground))' 
+                }}>The designing</Typography>
+            
+            <Designing.designingPOne />
+            <Designing.designingPTwo />
+            <Designing.designingPThree />
+            <Designing.designingPFour />
+            <Designing.designingPFive />
             
             </CardContent>
 
         </Collapse>
         </Card>
+        </ThemeProvider>
     );
 }
