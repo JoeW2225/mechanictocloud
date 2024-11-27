@@ -17,6 +17,28 @@ const lighthouse = (
   </Paper>
 );
 
+const buildings = (
+  <Paper sx={{width: 200 ,borderRadius: '16px', margin: 1}} elevation={4}>
+    <Image className='rounded-xl sm:w-[450px]'
+            src="/images/testImg2.webp"
+            alt='blah'
+            height={350}
+            width={300}
+                    />
+  </Paper>
+)
+
+const mountain = (
+  <Paper sx={{width: 400 ,borderRadius: '16px', margin: 1}} elevation={4}>
+    <Image className='rounded-xl sm:w-[450px]'
+            src="/images/testImg4.webp"
+            alt='blah'
+            height={450}
+            width={300}
+                    />
+  </Paper>
+)
+
 export default function ProjectOneGrow() {
   const [checked, setChecked] = React.useState(false);
 
@@ -25,12 +47,24 @@ export default function ProjectOneGrow() {
   };
 
   return (
-    <Box sx={{ height: 350 }}>
-      <FormControlLabel sx={{'& .MuiFormControlLabel-label': {fontFamily: 'platypi',}}}
+    <Box sx={{ 
+      height: {
+        xs: 850,
+        lg: 350
+      } 
+      }}>
+      <FormControlLabel sx={{'& .MuiFormControlLabel-label': {fontFamily: 'platypi', color: 'rgb(var(--foreground))'}}}
         control={<Switch checked={checked} onChange={handleChange} />}
         label="Show"
       />
-      <Box sx={{ display: 'flex' }}>
+      <Box sx={{ 
+        display: 'flex',
+        flexDirection: {
+          xs: 'column',
+          lg: 'row'
+        }
+        
+        }}>
         <Grow in={checked}>{lighthouse}</Grow>
         {/* Conditionally applies the timeout prop to change the entry speed. */}
         <Grow
@@ -38,7 +72,14 @@ export default function ProjectOneGrow() {
           style={{ transformOrigin: '0 0 0' }}
           {...(checked ? { timeout: 1000 } : {})}
         >
-          {lighthouse}
+          {buildings}
+        </Grow>
+        <Grow
+          in={checked}
+          style={{ transformOrigin: '0 0 0' }}
+          {...(checked ? { timeout: 2000 } : {})}
+        >
+          {mountain}
         </Grow>
       </Box>
     </Box>

@@ -1,4 +1,6 @@
 import * as React from 'react';
+import { useEffect } from 'react';
+import { Grow, Box } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import ArrowForwardIosSharpIcon from '@mui/icons-material/ArrowForwardIosSharp';
 import MuiAccordion, { AccordionProps } from '@mui/material/Accordion';
@@ -10,6 +12,7 @@ import { MechanicToCloudTxt } from '../library/projectTxt1';
 import ProjectOneGrow from './project_img_growers/ProjectImgs1';
 import ProjectTwoGrow from './project_img_growers/ProjectImgs2';
 import { Tbc } from '../library/projectTxt2';
+import HourglassTopIcon from '@mui/icons-material/HourglassTop';
 
 
 const Accordion = styled((props: AccordionProps) => (
@@ -17,10 +20,16 @@ const Accordion = styled((props: AccordionProps) => (
     ))(({ theme }) => ({
         border: `1px solid ${theme.palette.divider}`,
         '&:not(:last-child)': {
-            borderBottom: 0,
+            borderBottom: 'none',
+        },
+        marginTop: '0.1px',
+        background: 'rgba(255, 255, 255, 0.8)', 
+        boxShadow: '0 2px 10px rgba(0, 0, 0, 0.15)', 
+        '&.Mui-expanded': {
+            boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)', 
         },
         '&::before': {
-            display: 'none',
+        background: 'none',
         },
     }));
 
@@ -31,9 +40,13 @@ const AccordionSummary = styled((props: AccordionSummaryProps) => (
     />
     ))(({ theme }) => ({
         flexDirection: 'row-reverse',
-        backgroundColor: 'rgba(249, 4, 4, 1)',
         borderRadius: '16px',
-
+        color: 'rgb(var(--foreground))',
+        background: '#ffffff',
+        '&.Mui-expanded': {
+        background: 'rgba(255, 255, 255, 0.8)', 
+        boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)', 
+    },
         [`& .${accordionSummaryClasses.expandIconWrapper}.${accordionSummaryClasses.expanded}`]:
             {
             transform: 'rotate(90deg)',
@@ -42,7 +55,6 @@ const AccordionSummary = styled((props: AccordionSummaryProps) => (
             marginLeft: theme.spacing(1),
         },
         ...theme.applyStyles('dark', {
-            // backgroundColor: 'rgba(255, 255, 255, .20)',
         }),
     }));
 
@@ -53,7 +65,7 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
     }));
 
 
-export default function ProjectAccordions() {
+const ProjectAccordions = () => {
     const [expanded, setExpanded] = React.useState<string | false>('panel1');
 
     const handleChange =
@@ -64,10 +76,10 @@ export default function ProjectAccordions() {
     return (
         <div className='w-[86svw] rounded-xl'>
             <ThemeProvider theme={homeTheme}>
-            <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')} 
+            <Accordion onChange={handleChange('panel1')} 
             className='rounded-xl'>
                 <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
-                    <h2 className='font-platypi'>Mechanic to Cloud</h2>
+                    <h2 className='font-platypi'>Mechanic to Cloud - work in progess <HourglassTopIcon/></h2>
                 </AccordionSummary>
 
                 <AccordionDetails className='flex flex-col'>
@@ -100,4 +112,39 @@ export default function ProjectAccordions() {
             </ThemeProvider>
         </div>
     );
+}
+
+export default function GrowProjAcc() {
+        // Set animation to false before component mount:
+        const [checked, setChecked] = React.useState(false)
+
+        // Trigger animation on mount:
+        useEffect(() => {
+            setChecked(true)
+        },[])
+    
+        return (
+            <>
+            <Box 
+                sx={{ 
+                    height: 'auto', 
+                    minHeight: '300px',
+                    display: 'flex',
+                    justifyContent: 'center',
+                    position: 'absolute',
+                    zIndex: -10,
+                }}
+            ></Box>
+            <Grow
+            in={checked}
+            timeout={2000}
+            style={{ transformOrigin: 'center center' }}
+            >
+                <div>
+                    <ProjectAccordions />
+                </div>
+                
+            </Grow>
+            </>
+        );
 }

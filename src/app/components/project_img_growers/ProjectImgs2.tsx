@@ -26,7 +26,7 @@ export default function ProjectTwoGrow() {
 
   return (
     <Box sx={{ height: 350 }}>
-      <FormControlLabel sx={{'& .MuiFormControlLabel-label': {fontFamily: 'platypi',}}}
+      <FormControlLabel sx={{'& .MuiFormControlLabel-label': {fontFamily: 'platypi', color: 'rgb(var(--foreground))'}}}
         control={<Switch checked={checked} onChange={handleChange} />}
         label="Show"
       />
