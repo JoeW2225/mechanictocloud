@@ -50,27 +50,37 @@ export default function RecipeReviewCard() {
     };
 
     return (
-        <Card sx={{ maxWidth: 345 }}>
-        <CardHeader
+        <Card sx={{ maxWidth: 380 }}>
+        <CardHeader sx={{ 
+            '.MuiCardHeader-title':{
+                fontFamily: 'platypi',
+                color: 'rgb(var(--foreground))',
+                fontSize: '1.1rem',
+            }, 
+            '.MuiCardHeader-subheader': {
+                fontFamily: 'platypi',
+                color: 'rgb(var(--textColorLight))'
+            }  
+        }}
+
             avatar={
-            <Avatar sx={{ bgcolor: pink[500] }} aria-label="new">
+            <Avatar sx={{ backgroundColor:'rgba(5, 126, 208)' }} aria-label="plus in a screen">
                 <AddToQueueIcon />
             </Avatar>
             }
-            title="My First (Post-Course) Project"
+            title="My First Project: CRC"
             subheader=" 14th November, 2024"
         />
         <CardMedia
             component="img"
             height="194"
-            image="/static/images/cards/paella.jpg"
-            alt="Paella dish"
+            image="/images/growing.webp"
+            alt="small plant in vase"
         />
         <CardContent>
-            <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-            This impressive paella is a perfect party dish and a fun meal to cook
-            together with your guests. Add 1 cup of frozen peas along with the mussels,
-            if you like.
+            <Typography variant="body2" sx={{ fontFamily: 'platypi', color: 'rgb(var(--foreground))' }}>
+            Cloud Resume Challenge:<br></br> After completing my Software Developer course, this is my first, true, independent project. 
+            I am looking forward to putting the skills and lessons learnt into practice.  
             </Typography>
         </CardContent>
         <CardActions disableSpacing>
@@ -84,33 +94,39 @@ export default function RecipeReviewCard() {
             </ExpandMore>
         </CardActions>
         <Collapse in={expanded} timeout="auto" unmountOnExit>
+
             <CardContent>
-            <Typography sx={{ marginBottom: 2 }}>Method:</Typography>
+
+            <Typography sx={{ 
+                marginBottom: 2, 
+                fontFamily: 'platypi', 
+                color: 'rgb(var(--textColorLight))' 
+                }}>The Approach</Typography>
+
             <Typography sx={{ marginBottom: 2 }}>
-                Heat 1/2 cup of the broth in a pot until simmering, add saffron and set
-                aside for 10 minutes.
+            This wasn&#39;t my first attempt at the Cloud Resume Challenge (CRC). I had started a few months back,
+            having got to the stage of learning how I could deploy my Cloud set-up as IaaC (using Terraform).
             </Typography>
+
             <Typography sx={{ marginBottom: 2 }}>
-                Heat oil in a (14- to 16-inch) paella pan or a large, deep skillet over
-                medium-high heat. Add chicken, shrimp and chorizo, and cook, stirring
-                occasionally until lightly browned, 6 to 8 minutes. Transfer shrimp to a
-                large plate and set aside, leaving chicken and chorizo in the pan. Add
-                pimentón, bay leaves, garlic, tomatoes, onion, salt and pepper, and cook,
-                stirring often until thickened and fragrant, about 10 minutes. Add
-                saffron broth and remaining 4 1/2 cups chicken broth; bring to a boil.
+            However, I had stopped due to a fantastic opportunity to push my journey further into the tech world 
+            by enrolling in a 12 week Software Developer course (with the Tech Educators). 
+            I would come to learn many aspects about full stack web development from the basics of
+            JS, HTML, CSS, relational databases to React, Next and authentication tools like Clerk.
             </Typography>
+
             <Typography sx={{ marginBottom: 2 }}>
-                Add rice and stir very gently to distribute. Top with artichokes and
-                peppers, and cook without stirring, until most of the liquid is absorbed,
-                15 to 18 minutes. Reduce heat to medium-low, add reserved shrimp and
-                mussels, tucking them down into the rice, and cook again without
-                stirring, until mussels have opened and rice is just tender, 5 to 7
-                minutes more. (Discard any mussels that don&apos;t open.)
+            This was a pretty intense course and coming from no coding experience what-so-ever, 
+            proved to be a tough challenge indeed. The skills, knowledge and resources that I 
+            had gathered from doing this course would be invaluable for when I was to go back to doing the CRC.
             </Typography>
+
             <Typography>
                 Set aside off of the heat to let rest for 10 minutes, and then serve.
             </Typography>
+            
             </CardContent>
+
         </Collapse>
         </Card>
     );
