@@ -31,9 +31,6 @@ body {
   .MuiBreadcrumbs-separator {
     color: rgb(var(--foreground));
   }
-  .MuiTypography-root {
-    color: rgb(var(--foreground));
-  }
 }
 
 .platypi {
