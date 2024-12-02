@@ -10,19 +10,28 @@ import containers from '@/app/styles/containers.module.css';
 import FirstProjectCard from '@/app/components/journal_cards/FirstProject';
 import WebsitePlanningCard from '../components/journal_cards/WebsitePlanning';
 import WebsiteDesigningCard from '../components/journal_cards/WebsiteDesigning';
+import WebsiteSetupCard from '../components/journal_cards/WebsiteSetup';
+import WebsiteInitialCard from '../components/journal_cards/WebsiteInitial';
+import WebsiteBuildCard from '../components/journal_cards/WebsiteBuild';
 
-export default function Projects() {
+export default function Journal() {
     return (
         <>
             <NavBar/> <MobNavBar/>
             <CloudGroup/>
             <ThemeProvider theme={homeTheme}>
                 <main>
-                <div className={containers.cardsContainer}>
-                        <FirstProjectCard />
-                        <WebsitePlanningCard />
-                        <WebsiteDesigningCard />
-                    </div>
+                    
+                        <div className='flex flex-row justify-center'>
+                            <div className={containers.cardsContainer}>
+                                <FirstProjectCard />
+                                <WebsitePlanningCard />
+                                <WebsiteDesigningCard />
+                                <WebsiteSetupCard />
+                                <WebsiteInitialCard />
+                                <WebsiteBuildCard />
+                            </div>
+                        </div>
                 </main>
             </ThemeProvider>
             <footer className='sticky bottom-0 flex justify-center items-center w-full h-20 z-10'>

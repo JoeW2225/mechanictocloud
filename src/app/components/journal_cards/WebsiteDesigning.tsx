@@ -13,7 +13,7 @@ import Avatar from '@mui/material/Avatar';
 import IconButton, { IconButtonProps } from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import AddToQueueIcon from '@mui/icons-material/AddToQueue';
+import DesignServicesIcon from '@mui/icons-material/DesignServices';
 import * as Designing from '@/app/library/journal_card_content/websiteDesigningTxt'
 
 interface ExpandMoreProps extends IconButtonProps {
@@ -41,7 +41,7 @@ export default function WebsiteDesigningCard() {
 
     return (
         <ThemeProvider theme={homeTheme}>
-        <Card sx={{ maxWidth: 380, margin: 4 }}>
+        <Card sx={{ maxWidth: 340, margin: 2 }}>
         <CardHeader sx={{ 
             '.MuiCardHeader-title':{
                 fontFamily: 'platypi',
@@ -56,22 +56,24 @@ export default function WebsiteDesigningCard() {
 
             avatar={
             <Avatar sx={{ backgroundColor:'rgba(5, 126, 208)' }} aria-label="plus in a screen">
-                <AddToQueueIcon />
+                <DesignServicesIcon />
             </Avatar>
             }
-            title="My First Project: The Website"
-            subheader=" 14th November, 2024"
+            title="The Portfolio: Design"
+            subheader=" 5th November, 2024"
         />
         <CardMedia
             component="img"
             height="194"
-            image="/images/growing.webp"
-            alt="small plant in vase"
+            image="/images/design.webp"
+            alt="photo of a screen with many different icons"
         />
         <CardContent>
             <Typography variant="body2" sx={{ fontFamily: 'platypi', color: 'rgb(var(--foreground))' }}>
-            Cloud Resume Challenge: Designing<br></br> 
-            After  
+                Cloud Resume Challenge: Designing
+            </Typography>
+            <Typography variant="body2" sx={{ marginTop: 1, fontFamily: 'platypi', color: 'rgb(var(--foreground))' }}>
+                Bringing the ideas to life with low fidelity designs with Ok,So… and high fidelity using Figma. 
             </Typography>
         </CardContent>
         <CardActions disableSpacing>

@@ -13,7 +13,7 @@ import Avatar from '@mui/material/Avatar';
 import IconButton, { IconButtonProps } from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import ChecklistRtlIcon from '@mui/icons-material/ChecklistRtl';
+import FoundationIcon from '@mui/icons-material/Foundation';
 import * as Planning from '@/app/library/journal_card_content/websitePlanningTxt'
 
 interface ExpandMoreProps extends IconButtonProps {
@@ -32,7 +32,7 @@ const ExpandMore = styled(({ expand, ...other }: ExpandMoreProps) => (
     transform: expand ? 'rotate(180deg)' : 'rotate(0deg)',
 }));
 
-export default function WebsitePlanningCard() {
+export default function WebsiteBuildCard() {
     const [expanded, setExpanded] = React.useState(false);
 
     const handleExpandClick = () => {
@@ -56,24 +56,25 @@ export default function WebsitePlanningCard() {
 
             avatar={
             <Avatar sx={{ backgroundColor:'rgba(5, 126, 208)' }} aria-label="plus in a screen">
-                <ChecklistRtlIcon />
+                <FoundationIcon />
             </Avatar>
             }
-            title="The Portfolio: Planning"
-            subheader=" 4th November, 2024"
+            title="The Portfolio: Main Build"
+            subheader=" 2nd December, 2024"
         />
         <CardMedia
             component="img"
             height="194"
-            image="/images/planning.webp"
-            alt="white board with many post-it notes"
+            image="/images/mainBuild.webp"
+            alt="construction site"
         />
         <CardContent>
             <Typography variant="body2" sx={{ fontFamily: 'platypi', color: 'rgb(var(--foreground))' }}>
-            Cloud Resume Challenge: Planning
+            Cloud Resume Challenge: Main Build
             </Typography>
             <Typography variant="body2" sx={{ marginTop: 2, fontFamily: 'platypi', color: 'rgb(var(--foreground))' }}>
-            Determining the required tech stack for the frontend, backend, and cloud infrastructure. 
+            Getting the bulk of the site completed and adding content. Taking longer than anticipated, 
+            but turning out better than I had envisioned.
             </Typography>
         </CardContent>
         <CardActions disableSpacing>
@@ -100,6 +101,7 @@ export default function WebsitePlanningCard() {
             <Planning.planningPTwo />
             <Planning.planningPThree />
             <Planning.planningPFour />
+            <Planning.planningPFive />
             
             </CardContent>
 
