@@ -13,7 +13,7 @@ import Avatar from '@mui/material/Avatar';
 import IconButton, { IconButtonProps } from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import ChecklistRtlIcon from '@mui/icons-material/ChecklistRtl';
+import SettingsIcon from '@mui/icons-material/Settings';
 import * as Planning from '@/app/library/journal_card_content/websitePlanningTxt'
 
 interface ExpandMoreProps extends IconButtonProps {
@@ -32,7 +32,7 @@ const ExpandMore = styled(({ expand, ...other }: ExpandMoreProps) => (
     transform: expand ? 'rotate(180deg)' : 'rotate(0deg)',
 }));
 
-export default function WebsitePlanningCard() {
+export default function WebsiteSetupCard() {
     const [expanded, setExpanded] = React.useState(false);
 
     const handleExpandClick = () => {
@@ -56,24 +56,24 @@ export default function WebsitePlanningCard() {
 
             avatar={
             <Avatar sx={{ backgroundColor:'rgba(5, 126, 208)' }} aria-label="plus in a screen">
-                <ChecklistRtlIcon />
+                <SettingsIcon />
             </Avatar>
             }
-            title="The Portfolio: Planning"
-            subheader=" 4th November, 2024"
+            title="The Portfolio: Setup"
+            subheader=" 8th November, 2024"
         />
         <CardMedia
             component="img"
             height="194"
-            image="/images/planning.webp"
-            alt="white board with many post-it notes"
+            image="/images/setup.webp"
+            alt="small plant in vase"
         />
         <CardContent>
             <Typography variant="body2" sx={{ fontFamily: 'platypi', color: 'rgb(var(--foreground))' }}>
-            Cloud Resume Challenge: Planning
+            Cloud Resume Challenge: Setup
             </Typography>
             <Typography variant="body2" sx={{ marginTop: 2, fontFamily: 'platypi', color: 'rgb(var(--foreground))' }}>
-            Determining the required tech stack for the frontend, backend, and cloud infrastructure. 
+            Implementing agile practices using Kanban, source control with GitHub and setting up the Next App.
             </Typography>
         </CardContent>
         <CardActions disableSpacing>
@@ -81,7 +81,7 @@ export default function WebsitePlanningCard() {
             expand={expanded}
             onClick={handleExpandClick}
             aria-expanded={expanded}
-            aria-label="show more"
+            aria-label="a man connecting up a amp on stage"
             >
             <ExpandMoreIcon />
             </ExpandMore>
@@ -100,6 +100,7 @@ export default function WebsitePlanningCard() {
             <Planning.planningPTwo />
             <Planning.planningPThree />
             <Planning.planningPFour />
+            <Planning.planningPFive />
             
             </CardContent>
 

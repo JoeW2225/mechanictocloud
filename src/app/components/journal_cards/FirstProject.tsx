@@ -42,7 +42,7 @@ export default function FirstProjectCard() {
 
     return (
         <ThemeProvider theme={homeTheme}>
-        <Card sx={{ maxWidth: 380, margin: 4 }}>
+        <Card sx={{ maxWidth: 340, margin: 2 }}>
         <CardHeader sx={{ 
             '.MuiCardHeader-title':{
                 fontFamily: 'platypi',
@@ -61,7 +61,7 @@ export default function FirstProjectCard() {
             </Avatar>
             }
             title="My First Project: CRC"
-            subheader=" 14th November, 2024"
+            subheader=" 1st November, 2024"
         />
         <CardMedia
             component="img"
@@ -71,7 +71,9 @@ export default function FirstProjectCard() {
         />
         <CardContent>
             <Typography variant="body2" sx={{ fontFamily: 'platypi', color: 'rgb(var(--foreground))' }}>
-            Cloud Resume Challenge<br></br> 
+                Cloud Resume Challenge
+            <Typography />
+            <Typography variant="body2" sx={{ marginTop: 2, fontFamily: 'platypi', color: 'rgb(var(--foreground))' }}/>
             After completing my Software Developer course, this is my first, true, independent project. 
             I am looking forward to putting the skills and lessons learnt into practice.  
             </Typography>

@@ -1,10 +1,12 @@
 import Typography from '@mui/material/Typography';
+import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 
 export const planningPOne = () => {
     return (
         <Typography sx={{ marginBottom: 2, fontFamily: 'platypi', color: 'rgb(var(--textColorLight))'  }}>
-            This wasn&#39;t my first attempt at the Cloud Resume Challenge (CRC). I had started a few months back,
-            having got to the stage of learning how I could deploy my Cloud set-up as IaaC (using Terraform).
+            In the early stages of a project build, I initially like to get pen to paper. In my case a whiteboard. 
+            I find it quick and easy to get ideas down and erase them as and when needed. 
+            I find using tools like Figma is a little too overwhelming at such an early stage and can get easily distracting.
         </Typography>
     )
 }
@@ -12,10 +14,18 @@ export const planningPOne = () => {
 export const planningPTwo = () => {
     return (
         <Typography sx={{ marginBottom: 2, fontFamily: 'platypi', color: 'rgb(var(--textColorLight))'  }}>
-            However, I had stopped due to a fantastic opportunity to push my journey further into the tech world 
-            by enrolling in a 12 week Software Developer course (with the Tech Educators). 
-            I would come to learn many aspects about full stack web development from the basics of
-            JS, HTML, CSS, relational databases to React, Next and authentication tools like Clerk.
+            I made a list of the tech stack I were to use on this project. This being:
+            <ul className='mt-3'>
+                <li><ArrowRightIcon/>Source Control - GitHub</li>
+                <li className='mt-2'><ArrowRightIcon/>Framework - Next.js</li>
+                <li className='mt-2'><ArrowRightIcon/>Language - TypeScript</li>
+                <li className='mt-2'><ArrowRightIcon/>Cloud - AWS</li>
+                <li className='mt-2'><ArrowRightIcon/>IaaC tool - Terraform</li>
+                <li className='mt-2'><ArrowRightIcon/>Database - Relational, PostgreSQL</li>
+                <li className='mt-2'><ArrowRightIcon/>Testing - Playwright or Cypress</li>
+                <li className='mt-2'><ArrowRightIcon/>UI library - Material UI (MUI)</li>
+                <li className='mt-2'><ArrowRightIcon/>Styling - combination of Tailwind &  <p className='ml-2'>CSS (.module)</p></li>
+            </ul>
         </Typography>
     )
 }
@@ -23,9 +33,13 @@ export const planningPTwo = () => {
 export const planningPThree = () => {
     return (
         <Typography sx={{ marginBottom: 2, fontFamily: 'platypi', color: 'rgb(var(--textColorLight))'  }}>
-            This was a pretty intense course and coming from no coding experience what-so-ever, 
-            proved to be a tough challenge indeed. The skills, knowledge and resources that I 
-            had gathered from doing this course would be invaluable for when I was to go back to doing the CRC.
+            Planning:
+            <ul className='mt-3'>
+                <li><ArrowRightIcon/>Notes - Obsidian</li>
+                <li className='mt-2'><ArrowRightIcon/>Designing - Ok! So..., Figma, draw.io <p className='ml-2'>and my whiteboard</p></li>
+                <li className='mt-2'><ArrowRightIcon/>Project management: </li>
+                <li className='ml-2'>Kanban board - GitHub Projects</li>
+            </ul>
         </Typography>
     )
 }
@@ -34,34 +48,20 @@ export const planningPFour = () => {
     return (
         <>
         <Typography sx={{ marginBottom: 2, fontFamily: 'platypi', color: 'rgb(var(--textColorLight))'  }}>
-                Rather than carry on from where I had left off, I decided to start again for two main reasons:
+            AWS wise, I created a list of the main services I would need (however, subject to change):
+            <ul className='mt-3'>
+                <li><ArrowRightIcon/>Route 53</li>
+                <li className='mt-2'><ArrowRightIcon/>CloudFront</li>
+                <li className='mt-2'><ArrowRightIcon/>S3</li>
+                <li className='mt-2'><ArrowRightIcon/>Lambda</li>
+                <li className='mt-2'><ArrowRightIcon/>API Gateway</li>
+                <li className='mt-2'><ArrowRightIcon/>IAM</li>
+                <li className='mt-2'><ArrowRightIcon/>RDS</li>
+                <li className='mt-2'><ArrowRightIcon/>AWS CodePipeline</li>
+                <li className='mt-2'><ArrowRightIcon/>CloudWatch</li>
+            </ul>
             </Typography>
-            <Typography sx={{ marginBottom: 2, fontFamily: 'platypi', color: 'rgb(var(--textColorLight))'  }}>
-                1- As opposed to using a templated site like I did last time (as I knew nothing about web development), 
-                I would create my own site from scratch. After all, I was now not only showcasing my knowledge in AWS, 
-                but also as a Junior Developer.
-            </Typography>
-            <Typography sx={{ marginBottom: 2, fontFamily: 'platypi', color: 'rgb(var(--textColorLight))'  }}>
-                2- Going through the motions of setting up the Cloud side again. I was pretty rusty on the AWS side 
-                of things as the course didn&#39;t touch on Cloud. It had be quite sometime since I had studied/worked 
-                with AWS and like most things when you leave it for awhile, skill fade sets in.
-            </Typography>
-        </>
-    )
-}
-
-export const planningPFive = () => {
-    return (
-        <>
-        <Typography sx={{ marginBottom: 2, fontFamily: 'platypi', color: 'rgb(var(--textColorLight))'  }}>
-            Still using the CRC guide book, I decided to get to work. I would split this project into two main segments:
-        </Typography>
-        <Typography  sx={{ marginBottom: 2, fontFamily: 'platypi', color: 'rgb(var(--textColorLight))'  }} >
-            1- The website build
-        </Typography>
-        <Typography  sx={{ marginBottom: 2, fontFamily: 'platypi', color: 'rgb(var(--textColorLight))'  }}>
-            2- The AWS deployment
-        </Typography>
+            
         </>
     )
 }
