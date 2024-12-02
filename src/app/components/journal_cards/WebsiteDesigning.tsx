@@ -20,28 +20,16 @@ interface ExpandMoreProps extends IconButtonProps {
     expand: boolean;
 }
 
-const ExpandMore = styled((props: ExpandMoreProps) => {
-    const { ...other } = props;
-    return <IconButton {...other} />;
-    })(({ theme }) => ({
+//? undefined error on expand as not used in TSX, used the following to disable:
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+const ExpandMore = styled(({ expand, ...other }: ExpandMoreProps) => (
+    <IconButton {...other} />
+))(({ theme, expand }) => ({
     marginLeft: 'auto',
     transition: theme.transitions.create('transform', {
         duration: theme.transitions.duration.shortest,
     }),
-    variants: [
-        {
-            props: ({ expand }) => !expand,
-            style: {
-                transform: 'rotate(0deg)',
-            },
-        },
-        {
-        props: ({ expand }) => !!expand,
-        style: {
-            transform: 'rotate(180deg)',
-        },
-        },
-    ],
+    transform: expand ? 'rotate(180deg)' : 'rotate(0deg)',
 }));
 
 export default function WebsiteDesigningCard() {
@@ -53,7 +41,7 @@ export default function WebsiteDesigningCard() {
 
     return (
         <ThemeProvider theme={homeTheme}>
-        <Card sx={{ maxWidth: 380 }}>
+        <Card sx={{ maxWidth: 380, margin: 4 }}>
         <CardHeader sx={{ 
             '.MuiCardHeader-title':{
                 fontFamily: 'platypi',
@@ -71,7 +59,7 @@ export default function WebsiteDesigningCard() {
                 <AddToQueueIcon />
             </Avatar>
             }
-            title="My First Project: CRC"
+            title="My First Project: The Website"
             subheader=" 14th November, 2024"
         />
         <CardMedia
@@ -82,9 +70,8 @@ export default function WebsiteDesigningCard() {
         />
         <CardContent>
             <Typography variant="body2" sx={{ fontFamily: 'platypi', color: 'rgb(var(--foreground))' }}>
-            Cloud Resume Challenge:<br></br> 
-            After completing my Software Developer course, this is my first, true, independent project. 
-            I am looking forward to putting the skills and lessons learnt into practice.  
+            Cloud Resume Challenge: Designing<br></br> 
+            After  
             </Typography>
         </CardContent>
         <CardActions disableSpacing>
