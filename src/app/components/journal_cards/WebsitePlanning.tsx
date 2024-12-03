@@ -59,7 +59,7 @@ export default function WebsitePlanningCard() {
                 <ChecklistRtlIcon />
             </Avatar>
             }
-            title="The Portfolio: Planning"
+            title="The Site: Planning"
             subheader=" 4th November, 2024"
         />
         <CardMedia
@@ -96,10 +96,7 @@ export default function WebsitePlanningCard() {
                 color: 'rgb(var(--foreground))' 
                 }}>The Planning</Typography>
             
-            <Planning.planningPOne />
-            <Planning.planningPTwo />
-            <Planning.planningPThree />
-            <Planning.planningPFour />
+            <Planning.planningTxt />
             
             </CardContent>
 

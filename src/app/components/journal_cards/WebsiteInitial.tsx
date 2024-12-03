@@ -14,7 +14,7 @@ import IconButton, { IconButtonProps } from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ConstructionIcon from '@mui/icons-material/Construction';
-import * as Planning from '@/app/library/journal_card_content/websitePlanningTxt'
+import * as Initial from '@/app/library/journal_card_content/websiteInitialTxt'
 
 interface ExpandMoreProps extends IconButtonProps {
     expand: boolean;
@@ -59,7 +59,7 @@ export default function WebsiteInitialCard() {
                 <ConstructionIcon />
             </Avatar>
             }
-            title="The Portfolio: Initial Build"
+            title="The Site: Initial Build"
             subheader=" 12th November, 2024"
         />
         <CardMedia
@@ -94,14 +94,9 @@ export default function WebsiteInitialCard() {
                 marginBottom: 2, 
                 fontFamily: 'platypi', 
                 color: 'rgb(var(--foreground))' 
-                }}>The Planning</Typography>
-            
-            <Planning.planningPOne />
-            <Planning.planningPTwo />
-            <Planning.planningPThree />
-            <Planning.planningPFour />
-            <Planning.planningPFive />
-            
+                }}>Initial Steps</Typography>
+
+            <Initial.InitialTxt />
             </CardContent>
 
         </Collapse>

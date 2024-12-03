@@ -19,18 +19,7 @@
   margin-bottom: 2vh;
 }
 
-.cardsContainer {
-  display: grid;
-  justify-content: center;
-  /* Responsive columns: */
-  grid-template-columns: repeat(3, minmax(300px, 1fr));
-  grid-auto-rows: auto;
-  margin: 0; /* Remove default margin */
-  padding: 0; /* Remove default padding */
-  gap: 0; /* Set gap between cards to zero */
-  margin-bottom: 2vh;
-  align-items: start;
-}
+
 
 
 
