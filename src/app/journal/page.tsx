@@ -6,7 +6,7 @@ import { FooterCount } from '../components/footerCount'
 import * as React from 'react';
 import { ThemeProvider } from '@mui/system';
 import homeTheme from '../styles/homeTheme';
-import containers from '@/app/styles/containers.module.css';
+// import containers from '@/app/styles/containers.module.css';
 import FirstProjectCard from '@/app/components/journal_cards/FirstProject';
 import WebsitePlanningCard from '../components/journal_cards/WebsitePlanning';
 import WebsiteDesigningCard from '../components/journal_cards/WebsiteDesigning';
@@ -20,19 +20,35 @@ export default function Journal() {
             <NavBar/> <MobNavBar/>
             <CloudGroup/>
             <ThemeProvider theme={homeTheme}>
-                <main>
-                    
-                        <div className='flex flex-row justify-center'>
-                            <div className={containers.cardsContainer}>
-                                <FirstProjectCard />
-                                <WebsitePlanningCard />
-                                <WebsiteDesigningCard />
-                                <WebsiteSetupCard />
-                                <WebsiteInitialCard />
-                                <WebsiteBuildCard />
-                            </div>
-                        </div>
-                </main>
+            <main>
+      {/* DESKTOP VIEW */}
+        <div className='w-full flex justify-center'>
+            <div className='hidden sm:block'>
+                <FirstProjectCard />
+                <WebsiteSetupCard />
+            </div>
+
+            <div className='hidden sm:block'>
+                <WebsitePlanningCard />
+                <WebsiteInitialCard />
+            </div>
+            
+            <div className='hidden sm:block'>
+                <WebsiteDesigningCard />
+                <WebsiteBuildCard />
+            </div>
+        </div>
+
+      {/* MOBILE VIEW */}
+        <div className="flex flex-col items-center sm:hidden">
+            <FirstProjectCard />
+            <WebsitePlanningCard />
+            <WebsiteDesigningCard />
+            <WebsiteSetupCard />
+            <WebsiteInitialCard />
+            <WebsiteBuildCard />
+        </div>
+        </main>
             </ThemeProvider>
             <footer className='sticky bottom-0 flex justify-center items-center w-full h-20 z-10'>
                 <FooterCount/>

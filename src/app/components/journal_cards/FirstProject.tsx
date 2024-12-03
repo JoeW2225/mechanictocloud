@@ -72,8 +72,8 @@ export default function FirstProjectCard() {
         <CardContent>
             <Typography variant="body2" sx={{ fontFamily: 'platypi', color: 'rgb(var(--foreground))' }}>
                 Cloud Resume Challenge
-            <Typography />
-            <Typography variant="body2" sx={{ marginTop: 2, fontFamily: 'platypi', color: 'rgb(var(--foreground))' }}/>
+            </Typography>
+            <Typography variant="body2" sx={{ marginTop: 2, fontFamily: 'platypi', color: 'rgb(var(--foreground))' }}>
             After completing my Software Developer course, this is my first, true, independent project. 
             I am looking forward to putting the skills and lessons learnt into practice.  
             </Typography>
@@ -98,11 +98,7 @@ export default function FirstProjectCard() {
                 color: 'rgb(var(--foreground))' 
                 }}>The Approach</Typography>
             
-            <Approach.approachPOne />
-            <Approach.approachPTwo />
-            <Approach.approachPThree />
-            <Approach.approachPFour />
-            <Approach.approachPFive />
+            <Approach.approachTxt />
             
             </CardContent>
 

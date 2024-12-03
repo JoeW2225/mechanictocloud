@@ -14,7 +14,7 @@ import IconButton, { IconButtonProps } from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import SettingsIcon from '@mui/icons-material/Settings';
-import * as Planning from '@/app/library/journal_card_content/websitePlanningTxt'
+import * as Setup from '@/app/library/journal_card_content/websiteSetupTxt'
 
 interface ExpandMoreProps extends IconButtonProps {
     expand: boolean;
@@ -59,7 +59,7 @@ export default function WebsiteSetupCard() {
                 <SettingsIcon />
             </Avatar>
             }
-            title="The Portfolio: Setup"
+            title="The Site: Setup"
             subheader=" 8th November, 2024"
         />
         <CardMedia
@@ -94,14 +94,10 @@ export default function WebsiteSetupCard() {
                 marginBottom: 2, 
                 fontFamily: 'platypi', 
                 color: 'rgb(var(--foreground))' 
-                }}>The Planning</Typography>
+                }}>The Setup</Typography>
             
-            <Planning.planningPOne />
-            <Planning.planningPTwo />
-            <Planning.planningPThree />
-            <Planning.planningPFour />
-            <Planning.planningPFive />
-            
+            <Setup.setupTxt />
+
             </CardContent>
 
         </Collapse>

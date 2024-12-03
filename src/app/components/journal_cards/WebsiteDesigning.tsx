@@ -59,7 +59,7 @@ export default function WebsiteDesigningCard() {
                 <DesignServicesIcon />
             </Avatar>
             }
-            title="The Portfolio: Design"
+            title="The Site: Design"
             subheader=" 5th November, 2024"
         />
         <CardMedia
@@ -96,11 +96,7 @@ export default function WebsiteDesigningCard() {
                 color: 'rgb(var(--foreground))' 
                 }}>The designing</Typography>
             
-            <Designing.designingPOne />
-            <Designing.designingPTwo />
-            <Designing.designingPThree />
-            <Designing.designingPFour />
-            <Designing.designingPFive />
+            <Designing.designingTxt />
             
             </CardContent>
 
