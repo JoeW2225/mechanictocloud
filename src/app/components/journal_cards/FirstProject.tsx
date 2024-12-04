@@ -1,5 +1,7 @@
 'use client'
 import * as React from 'react';
+import { useEffect } from 'react';
+import { Grow, Box } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import { ThemeProvider } from '@mui/system';
 import homeTheme from '@/app/styles/homeTheme';
@@ -15,6 +17,7 @@ import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import AddToQueueIcon from '@mui/icons-material/AddToQueue';
 import * as Approach from '@/app/library/journal_card_content/firstPrjTxt'
+
 
 interface ExpandMoreProps extends IconButtonProps {
     expand: boolean;
@@ -33,7 +36,7 @@ const ExpandMore = styled(({ expand, ...other }: ExpandMoreProps) => (
 }));
 
 
-export default function FirstProjectCard() {
+const FirstProjectCard = () => {
     const [expanded, setExpanded] = React.useState(false);
 
     const handleExpandClick = () => {
@@ -105,5 +108,40 @@ export default function FirstProjectCard() {
         </Collapse>
         </Card>
         </ThemeProvider>
+    );
+}
+
+export default function GrowFirstProj() {
+    // Set animation to false before component mount:
+    const [checked, setChecked] = React.useState(false)
+
+    // Trigger animation on mount:
+    useEffect(() => {
+        setChecked(true)
+    },[])
+
+    return (
+        <>
+        <Box 
+            sx={{ 
+                height: 'auto', 
+                minHeight: '300px',
+                display: 'flex',
+                justifyContent: 'center',
+                position: 'absolute',
+                zIndex: -10,
+            }}
+        ></Box>
+        <Grow
+        in={checked}
+        timeout={1000}
+        style={{ transformOrigin: 'center center' }}
+        >
+            <div>
+                <FirstProjectCard />
+            </div>
+            
+        </Grow>
+        </>
     );
 }

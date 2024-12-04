@@ -52,7 +52,7 @@ const introPaper = (
                         backdropFilter: 'blur(4px)',
                         WebkitBackdropFilter: 'blur(4px)',
                         }}>
-                        Here&#39;s my introduction
+                        Here&#39;s my Introduction
                     <div className='flex flex-col items-center sm:flex-row'>
                     <Paper sx={{
                             display: 'flex',

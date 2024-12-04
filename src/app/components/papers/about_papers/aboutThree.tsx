@@ -6,10 +6,10 @@ import { ThemeProvider } from '@mui/system';
 import { useEffect } from 'react';
 import homeTheme from '@/app/styles/homeTheme';
 import ArchitectureIcon from '@mui/icons-material/Architecture';
-import HorizontalDivider from '../../paragDividerH';
+import * as HorizontalDivider from '../../paragDividerH';
 import TrendingUpIcon from '@mui/icons-material/TrendingUp';
-import { PresentOne } from '@/app/library/aboutTxtSix';
-import { PresentTwo } from '@/app/library/aboutTxtSeven';
+import { PresentOne } from '@/app/library/about_paper_content/aboutTxtSix';
+import { PresentTwo } from '@/app/library/about_paper_content/aboutTxtSeven';
 
 
 const presentPaper = (
@@ -89,7 +89,7 @@ const presentPaper = (
                             <PresentOne />
                         </Paper>
 
-                        <HorizontalDivider />
+                        <HorizontalDivider.HorizDividerLg />
 
                         <Paper sx={{
                             display: 'flex',

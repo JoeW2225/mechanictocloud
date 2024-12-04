@@ -6,6 +6,15 @@ import { ThemeProvider } from '@mui/system';
 import { Grow, Box } from '@mui/material';
 import homeTheme from '@/app/styles/homeTheme';
 import LayersIcon from '@mui/icons-material/Layers';
+import { Code } from '@mui/icons-material';
+import TableRowsIcon from '@mui/icons-material/TableRows';
+import { LibraryBooks } from '@mui/icons-material';
+import { FilterFrames } from '@mui/icons-material';
+import { GitHub } from '@mui/icons-material';
+import DrawIcon from '@mui/icons-material/Draw';
+import CloudIcon from '@mui/icons-material/Cloud';
+import ViewKanbanIcon from '@mui/icons-material/ViewKanban';
+import * as HorizontalDivider from '../../paragDividerH';
 
 
 const namePaper = (
@@ -86,6 +95,335 @@ const namePaper = (
                                 md: '1.5rem',
                                 }
                             }} /> Full-Stack Web Developer
+                        </Paper>
+
+                        <Paper sx={{
+                            display: 'flex',
+                            justifyContent: 'center',
+                            alignItems: 'center',
+                            flexDirection: 'row',
+                            marginBottom: {
+                                xs: 1,
+                            },
+                            // Responsive gap:
+                            gap: {
+                                xs: 1,
+                                sm: 1.5,
+                                md: 2,
+                            },
+                            width: {
+                                xs: 260,
+                                sm: 320,
+                                md: 400,
+                            },
+                            background: 'none',
+                            boxShadow: 'none',
+                            color: 'rgb(var(--textColorLight))',
+                            fontSize: {
+                                xs: 14,
+                                sm: 15,
+                                md: 16,
+                            },
+                            }}>
+                            <CloudIcon sx={{ 
+                                fontSize: {
+                                xs: '1.2rem',
+                                sm: '1.3rem',
+                                md: '1.5rem',
+                                }
+                            }} /> AWS Certified Cloud Practitioner
+                        </Paper>
+
+                        <HorizontalDivider.HorizDividerSm />
+
+                        <Paper sx={{
+                            display: 'flex',
+                            justifyContent: 'center',
+                            alignItems: 'center',
+                            flexDirection: 'row',
+                            marginBottom: {
+                                xs: 1,
+                            },
+                            // Responsive gap:
+                            gap: {
+                                xs: 1,
+                                sm: 1.5,
+                                md: 2,
+                            },
+                            width: {
+                                xs: 260,
+                                sm: 320,
+                                md: 400,
+                            },
+                            background: 'none',
+                            boxShadow: 'none',
+                            color: 'rgb(var(--textColorLight))',
+                            fontSize: {
+                                xs: 14,
+                                sm: 15,
+                                md: 16,
+                            },
+                            }}>
+                            <Code sx={{ 
+                                fontSize: {
+                                xs: '1.2rem',
+                                sm: '1.3rem',
+                                md: '1.5rem',
+                                }
+                            }} /> JavaScript
+                        </Paper>
+
+                        <Paper sx={{
+                            display: 'flex',
+                            justifyContent: 'center',
+                            alignItems: 'center',
+                            flexDirection: 'row',
+                            marginBottom: {
+                                xs: 1,
+                            },
+                            // Responsive gap:
+                            gap: {
+                                xs: 1,
+                                sm: 1.5,
+                                md: 2,
+                            },
+                            width: {
+                                xs: 260,
+                                sm: 320,
+                                md: 400,
+                            },
+                            background: 'none',
+                            boxShadow: 'none',
+                            color: 'rgb(var(--textColorLight))',
+                            fontSize: {
+                                xs: 14,
+                                sm: 15,
+                                md: 16,
+                            },
+                            }}>
+                            <Code sx={{ 
+                                fontSize: {
+                                xs: '1.2rem',
+                                sm: '1.3rem',
+                                md: '1.5rem',
+                                }
+                            }} /> TypeScript
+                        </Paper>
+                        <Paper sx={{
+                            display: 'flex',
+                            justifyContent: 'center',
+                            alignItems: 'center',
+                            flexDirection: 'row',
+                            marginBottom: {
+                                xs: 1,
+                            },
+                            // Responsive gap:
+                            gap: {
+                                xs: 1,
+                                sm: 1.5,
+                                md: 2,
+                            },
+                            width: {
+                                xs: 260,
+                                sm: 320,
+                                md: 400,
+                            },
+                            background: 'none',
+                            boxShadow: 'none',
+                            color: 'rgb(var(--textColorLight))',
+                            fontSize: {
+                                xs: 14,
+                                sm: 15,
+                                md: 16,
+                            },
+                            }}>
+                            <FilterFrames sx={{ 
+                                fontSize: {
+                                xs: '1.2rem',
+                                sm: '1.3rem',
+                                md: '1.5rem',
+                                }
+                            }} /> Next.js
+                        </Paper>
+                        <Paper sx={{
+                            display: 'flex',
+                            justifyContent: 'center',
+                            alignItems: 'center',
+                            flexDirection: 'row',
+                            marginBottom: {
+                                xs: 1,
+                            },
+                            // Responsive gap:
+                            gap: {
+                                xs: 1,
+                                sm: 1.5,
+                                md: 2,
+                            },
+                            width: {
+                                xs: 260,
+                                sm: 320,
+                                md: 400,
+                            },
+                            background: 'none',
+                            boxShadow: 'none',
+                            color: 'rgb(var(--textColorLight))',
+                            fontSize: {
+                                xs: 14,
+                                sm: 15,
+                                md: 16,
+                            },
+                            }}>
+                            <LibraryBooks sx={{ 
+                                fontSize: {
+                                xs: '1.2rem',
+                                sm: '1.3rem',
+                                md: '1.5rem',
+                                }
+                            }} /> React.js
+                        </Paper>
+                        <Paper sx={{
+                            display: 'flex',
+                            justifyContent: 'center',
+                            alignItems: 'center',
+                            flexDirection: 'row',
+                            marginBottom: {
+                                xs: 1,
+                            },
+                            // Responsive gap:
+                            gap: {
+                                xs: 1,
+                                sm: 1.5,
+                                md: 2,
+                            },
+                            width: {
+                                xs: 260,
+                                sm: 320,
+                                md: 400,
+                            },
+                            background: 'none',
+                            boxShadow: 'none',
+                            color: 'rgb(var(--textColorLight))',
+                            fontSize: {
+                                xs: 14,
+                                sm: 15,
+                                md: 16,
+                            },
+                            }}>
+                            <TableRowsIcon sx={{ 
+                                fontSize: {
+                                xs: '1.2rem',
+                                sm: '1.3rem',
+                                md: '1.5rem',
+                                }
+                            }} /> PostgreSQL
+                        </Paper>
+                        <Paper sx={{
+                            display: 'flex',
+                            justifyContent: 'center',
+                            alignItems: 'center',
+                            flexDirection: 'row',
+                            marginBottom: {
+                                xs: 1,
+                            },
+                            // Responsive gap:
+                            gap: {
+                                xs: 1,
+                                sm: 1.5,
+                                md: 2,
+                            },
+                            width: {
+                                xs: 260,
+                                sm: 320,
+                                md: 400,
+                            },
+                            background: 'none',
+                            boxShadow: 'none',
+                            color: 'rgb(var(--textColorLight))',
+                            fontSize: {
+                                xs: 14,
+                                sm: 15,
+                                md: 16,
+                            },
+                            }}>
+                            <GitHub sx={{ 
+                                fontSize: {
+                                xs: '1.2rem',
+                                sm: '1.3rem',
+                                md: '1.5rem',
+                                }
+                            }} /> GitHub
+                        </Paper>
+                        <Paper sx={{
+                            display: 'flex',
+                            justifyContent: 'center',
+                            alignItems: 'center',
+                            flexDirection: 'row',
+                            marginBottom: {
+                                xs: 1,
+                            },
+                            // Responsive gap:
+                            gap: {
+                                xs: 1,
+                                sm: 1.5,
+                                md: 2,
+                            },
+                            width: {
+                                xs: 260,
+                                sm: 320,
+                                md: 400,
+                            },
+                            background: 'none',
+                            boxShadow: 'none',
+                            color: 'rgb(var(--textColorLight))',
+                            fontSize: {
+                                xs: 14,
+                                sm: 15,
+                                md: 16,
+                            },
+                            }}>
+                            <DrawIcon sx={{ 
+                                fontSize: {
+                                xs: '1.2rem',
+                                sm: '1.3rem',
+                                md: '1.5rem',
+                                }
+                            }} /> Figma
+                        </Paper>
+                        <Paper sx={{
+                            display: 'flex',
+                            justifyContent: 'center',
+                            alignItems: 'center',
+                            flexDirection: 'row',
+                            marginBottom: {
+                                xs: 1,
+                            },
+                            // Responsive gap:
+                            gap: {
+                                xs: 1,
+                                sm: 1.5,
+                                md: 2,
+                            },
+                            width: {
+                                xs: 260,
+                                sm: 320,
+                                md: 400,
+                            },
+                            background: 'none',
+                            boxShadow: 'none',
+                            color: 'rgb(var(--textColorLight))',
+                            fontSize: {
+                                xs: 14,
+                                sm: 15,
+                                md: 16,
+                            },
+                            }}>
+                            <ViewKanbanIcon sx={{ 
+                                fontSize: {
+                                xs: '1.2rem',
+                                sm: '1.3rem',
+                                md: '1.5rem',
+                                }
+                            }} /> Kanban
                         </Paper>
                     
                 </Paper>

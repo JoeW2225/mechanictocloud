@@ -6,16 +6,16 @@ import { ThemeProvider } from '@mui/system';
 import { Grow, Box } from '@mui/material';
 import homeTheme from '@/app/styles/homeTheme';
 import BuildCircleIcon from '@mui/icons-material/BuildCircle';
-import { PastOne } from '@/app/library/aboutTxt';
-import { PastTwo } from '@/app/library/aboutTxtTwo';
-import { PastThree } from '@/app/library/aboutTxtThree';
-import { PastFour } from '@/app/library/aboutTxtFour';
-import { PastFive } from '@/app/library/aboutTxtFive';
+import { PastOne } from '@/app/library/about_paper_content/aboutTxt';
+import { PastTwo } from '@/app/library/about_paper_content/aboutTxtTwo';
+import { PastThree } from '@/app/library/about_paper_content/aboutTxtThree';
+import { PastFour } from '@/app/library/about_paper_content/aboutTxtFour';
+import { PastFive } from '@/app/library/about_paper_content/aboutTxtFive';
 import AltRouteIcon from '@mui/icons-material/AltRoute';
 import CloudIcon from '@mui/icons-material/Cloud';
 import CodeIcon from '@mui/icons-material/Code';
 import UpgradeIcon from '@mui/icons-material/Upgrade';
-import HorizontalDivider from '../../paragDividerH';
+import * as HorizontalDivider from '../../paragDividerH';
 
 
 const pastPaper = (
@@ -95,7 +95,7 @@ const pastPaper = (
                             <PastOne />
                         </Paper>
 
-                        <HorizontalDivider />
+                        <HorizontalDivider.HorizDividerLg />
 
                         <Paper sx={{
                             display: 'flex',
@@ -130,7 +130,7 @@ const pastPaper = (
                             <PastTwo />
                         </Paper>
 
-                        <HorizontalDivider />
+                        <HorizontalDivider.HorizDividerLg />
 
                         <Paper sx={{
                             display: 'flex',
@@ -165,7 +165,7 @@ const pastPaper = (
                             <PastThree />
                         </Paper>
 
-                        <HorizontalDivider />
+                        <HorizontalDivider.HorizDividerLg />
 
                         <Paper sx={{
                             display: 'flex',
@@ -200,7 +200,7 @@ const pastPaper = (
                             <PastFour />
                         </Paper>
 
-                        <HorizontalDivider />
+                        <HorizontalDivider.HorizDividerLg />
 
                         <Paper sx={{
                             display: 'flex',

@@ -1,6 +1,7 @@
 .footContainer {
   position: relative;
   display: inline-block;
+  bottom: 0;
 }
 
 .footBlur {

@@ -6,7 +6,7 @@ import { ThemeProvider } from '@mui/system';
 import { Grow, Box } from '@mui/material';
 import homeTheme from '@/app/styles/homeTheme';
 import UpdateIcon from '@mui/icons-material/Update';
-import { FutureOne } from '@/app/library/aboutTxtEight';
+import { FutureOne } from '@/app/library/about_paper_content/aboutTxtEight';
 
 const futurePaper = (
 

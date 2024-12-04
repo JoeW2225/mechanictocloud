@@ -1,8 +1,9 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 
-const HorizontalDivider = () => (
-    <Box
+export const HorizDividerLg = () => {
+    return(
+        <Box
     sx={{
             
             width: {
@@ -22,6 +23,31 @@ const HorizontalDivider = () => (
             },
         }}
     />
-);
+    )
+}
 
-export default HorizontalDivider;
+export const HorizDividerSm = () => {
+    return(
+        <Box
+    sx={{
+            
+            width: {
+            // Wide for horizontal:
+            xs: '12rem',
+            lg:  '16rem',
+            },
+            height: {
+            // Thin for horizontal:
+            xs: '2px',
+            
+            },
+            backgroundColor: 'primary.dark',
+            margin: {
+            xs: '2vh 8px',
+            
+            },
+        }}
+    />
+    )
+    
+}

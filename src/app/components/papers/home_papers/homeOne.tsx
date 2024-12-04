@@ -162,7 +162,7 @@ const welcomePaper = (
                                 sm: '1.3rem',
                                 md: '1.5rem',
                                 }
-                            }} /> UI library MUI
+                            }} /> UI library Material UI
                         </Paper>
 
                         <Paper sx={{
@@ -238,5 +238,4 @@ export default function GrowWelcome() {
         </Grow>
         </>
     );
-
 }

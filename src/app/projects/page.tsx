@@ -15,13 +15,13 @@ export default function Projects() {
             <NavBar/> <MobNavBar/>
             <CloudGroup/>
             <ThemeProvider theme={homeTheme}>
-                <main>
+                <main className={containers.projectMain}>
                 <div className={containers.accordContainer}>
                         <ProjectAccordions />
                     </div>
                 </main>
             </ThemeProvider>
-            <footer className='sticky bottom-0 flex justify-center items-center w-full h-20 z-10'>
+            <footer className='sticky bottom-0 flex justify-center items-center w-full h-20 z-6'>
                 <FooterCount/>
             </footer>
             </>
