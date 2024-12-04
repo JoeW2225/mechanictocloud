@@ -1,5 +1,7 @@
 'use client'
 import * as React from 'react';
+import { useEffect } from 'react';
+import { Grow, Box } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import { ThemeProvider } from '@mui/system';
 import homeTheme from '@/app/styles/homeTheme';
@@ -32,7 +34,7 @@ const ExpandMore = styled(({ expand, ...other }: ExpandMoreProps) => (
     transform: expand ? 'rotate(180deg)' : 'rotate(0deg)',
 }));
 
-export default function WebsiteInitialCard() {
+export const WebsiteInitialCard = () => {
     const [expanded, setExpanded] = React.useState(false);
 
     const handleExpandClick = () => {
@@ -102,5 +104,39 @@ export default function WebsiteInitialCard() {
         </Collapse>
         </Card>
         </ThemeProvider>
+    );
+}
+export default function GrowSetupCard() {
+    // Set animation to false before component mount:
+    const [checked, setChecked] = React.useState(false)
+
+    // Trigger animation on mount:
+    useEffect(() => {
+        setChecked(true)
+    },[])
+
+    return (
+        <>
+        <Box 
+            sx={{ 
+                height: 'auto', 
+                minHeight: '300px',
+                display: 'flex',
+                justifyContent: 'center',
+                position: 'absolute',
+                zIndex: -10,
+            }}
+        ></Box>
+        <Grow
+        in={checked}
+        timeout={2000}
+        style={{ transformOrigin: 'center center' }}
+        >
+            <div>
+                <WebsiteInitialCard />
+            </div>
+            
+        </Grow>
+        </>
     );
 }

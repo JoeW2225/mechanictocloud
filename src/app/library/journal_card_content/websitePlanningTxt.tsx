@@ -24,7 +24,7 @@ export const planningTxt = () => {
             </ul>
         </Typography>
         <Typography component='div' sx={{ marginBottom: 2, fontFamily: 'platypi', color: 'rgb(var(--textColorLight))'  }}>
-            Planning:
+            Organisation:
             <ul className='mt-3'>
                 <li><ArrowRightIcon/><strong>Notes</strong> - Obsidian</li>
                 <li className='mt-2'><ArrowRightIcon/><strong>Designing</strong> - Ok! So..., Figma, draw.io <div className='ml-2'>and my whiteboard</div></li>

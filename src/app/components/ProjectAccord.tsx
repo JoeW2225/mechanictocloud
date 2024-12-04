@@ -8,10 +8,10 @@ import MuiAccordionSummary, { AccordionSummaryProps, accordionSummaryClasses } f
 import MuiAccordionDetails from '@mui/material/AccordionDetails';
 import { ThemeProvider } from '@mui/system';
 import homeTheme from '@/app/styles/homeTheme';
-import { MechanicToCloudTxt } from '../library/projectTxt1';
-import ProjectOneGrow from './project_img_growers/ProjectImgs1';
-import ProjectTwoGrow from './project_img_growers/ProjectImgs2';
-import { Tbc } from '../library/projectTxt2';
+import { MechanicToCloudTxt } from '@/app/library/proj_accord_content/projectTxt1';
+import ProjectOne from './project_img_growers/ProjectImgs1';
+import ProjectTwo from './project_img_growers/ProjectImgs2';
+import { Tbc } from '@/app/library/proj_accord_content/projectTxt2';
 import HourglassTopIcon from '@mui/icons-material/HourglassTop';
 
 
@@ -85,8 +85,8 @@ const ProjectAccordions = () => {
                 <AccordionDetails className='flex flex-col'>
                     
                         <MechanicToCloudTxt />
-                        <div className='mt-3'>
-                            <ProjectOneGrow />
+                        <div className='mt-3 min-h-full sm:min-h-full'>
+                            <ProjectOne />
                         </div>
                     
                 </AccordionDetails>
@@ -103,8 +103,8 @@ const ProjectAccordions = () => {
                 <AccordionDetails>
 
                         <Tbc />
-                        <div className='mt-3'>
-                            <ProjectTwoGrow />
+                        <div className='mt-3 min-h-full sm:min-h-full'>
+                            <ProjectTwo />
                         </div>
 
                 </AccordionDetails>
