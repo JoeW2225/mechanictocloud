@@ -1,8 +1,9 @@
 
-import DoorTransition from './components/doorTransition';
+import { DoorTransition } from './components/doorTransition';
 import CloudGroup from './components/CloudGroup';
 import { FooterCount } from '@/app/components/footerCount'
 import TitleTransition from './components/TitleTransition';
+import { CountProvider } from '@/app/components/doorTransition'
 
 
 
@@ -11,6 +12,7 @@ export default function Home() {
   return (
     <>
       <CloudGroup />
+      <CountProvider>
       <main>
         <TitleTransition />
         <DoorTransition />
@@ -18,6 +20,7 @@ export default function Home() {
       <footer className='sticky bottom-0 flex justify-center items-center w-full h-20 z-10 mt-28'>
         <FooterCount/>
       </footer>
+      </CountProvider>
     </>
   );
 }

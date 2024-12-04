@@ -15,11 +15,7 @@ export const metadata: Metadata = {
   description: "Welcome to my portfolio website!",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children,}: Readonly<{ children: React.ReactNode; }>) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body  className={`${platypi.variable} antialiased bg-[rgb(var(--background))] text-[rgb(var(--foreground))]`}>
