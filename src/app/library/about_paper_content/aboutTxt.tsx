@@ -16,7 +16,7 @@ export const PastOne = () => {
             <div className="w-full flex justify-center">
                 <Image className='rounded-xl sm:w-[450px]'
                     src="/images/landroverfix.webp"
-                    alt='A silhouette of a post with multiple signs pointing in different directions'
+                    alt='Me fixing a landrover'
                     height={350}
                     width={300}
                     />

@@ -26,7 +26,7 @@ export const FutureOne = () => {
                     />
                 <Image className='rounded-xl hidden lg:block'
                     src="/images/lookingAhead.webp"
-                    alt='A long, straight, empty road with mountains and trees in the far distance'
+                    alt='A man up on the top of a hill looking into the distance'
                     height={350}
                     width={450}
                     />
