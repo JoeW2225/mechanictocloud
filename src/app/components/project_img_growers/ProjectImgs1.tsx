@@ -7,7 +7,7 @@ const lowFidHome = (
   <Paper sx={{width: {xs: 'auto' ,lg:'70vw'} , borderRadius: '16px', margin: 1}} elevation={4}>
     <Image className='rounded-xl sm:w-full'
             src="/images/okSoHomeDesktop.webp"
-            alt='blah'
+            alt='low-detail home page on desktop'
             layout='responsive'
             height={250}
             width={300}
@@ -19,7 +19,7 @@ const lowFidHomeMob = (
   <Paper sx={{ width: {xs: 'auto' ,lg:'40vw'} , borderRadius: '16px', margin: 1}} elevation={4}>
     <Image className='rounded-xl sm:w-full'
             src="/images/okSoHomeMob.webp"
-            alt='blah'
+            alt='low-detail home page on mobile'
             layout='responsive'
             height={350}
             width={500}
@@ -31,7 +31,7 @@ const figmaProject = (
   <Paper sx={{width: {xs: 'auto' ,lg:'70vw'}, borderRadius: '16px', margin: 1}} elevation={4}>
     <Image className='rounded-xl sm:w-full'
             src="/images/figmaProj.webp"
-            alt='blah'
+            alt='high-detail projects page on desktop'
             layout='responsive'
             height={450}
             width={300}
@@ -42,8 +42,8 @@ const figmaProject = (
 const figmaProjectMob = (
   <Paper sx={{width: {xs: 'auto' ,lg:'40vw'} ,borderRadius: '16px', margin: 1}} elevation={4}>
     <Image className='rounded-xl sm:w-full'
-            src="https://www.mechanictocloud.com/images/figmaProjMob.webp"
-            alt='blah'
+            src="/images/figmaProjMob.webp"
+            alt='high-detail projects page on mobile'
             layout='responsive'
             height={450}
             width={300}
