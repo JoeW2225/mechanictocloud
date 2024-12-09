@@ -6,7 +6,7 @@ import Image from 'next/image';
 const lowFidHome = (
   <Paper sx={{width: {xs: 'auto' ,lg:'70vw'} , borderRadius: '16px', margin: 1}} elevation={4}>
     <Image className='rounded-xl sm:w-full'
-            src="/images/logo.webp"
+            src="https://www.mechanictocloud.com/images/logo.webp"
             alt='blah'
             layout='responsive'
             height={250}
