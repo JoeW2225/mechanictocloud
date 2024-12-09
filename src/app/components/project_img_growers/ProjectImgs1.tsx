@@ -30,7 +30,7 @@ const lowFidHomeMob = (
 const figmaProject = (
   <Paper sx={{width: {xs: 'auto' ,lg:'70vw'}, borderRadius: '16px', margin: 1}} elevation={4}>
     <Image className='rounded-xl sm:w-full'
-            src="https://www.mechanictocloud.com/images/figmaProj.webp"
+            src="/images/figmaProj.webp"
             alt='blah'
             layout='responsive'
             height={450}

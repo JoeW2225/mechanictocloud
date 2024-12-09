@@ -19,13 +19,13 @@ export const FutureOne = () => {
 
             <div className="w-full flex justify-center">
                 <Image className='rounded-xl lg:hidden'
-                    src="https://www.mechanictocloud.com/images/goingForward.webp"
+                    src="/images/goingForward.webp"
                     alt='A long, straight, empty road with mountains and trees in the far distance'
                     height={350}
                     width={300}
                     />
                 <Image className='rounded-xl hidden lg:block'
-                    src="https://www.mechanictocloud.com/images/lookingAhead.webp"
+                    src="/images/lookingAhead.webp"
                     alt='A man up on the top of a hill looking into the distance'
                     height={350}
                     width={450}

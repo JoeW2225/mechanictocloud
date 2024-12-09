@@ -22,7 +22,7 @@ export default function IconBreadcrumbs() {
                     color: "rgb(86, 96, 86)",
                     fontFamily: 'platypi'
                 }}
-                href="https://www.mechanictocloud.com/home">
+                href="/home">
                 <BungalowIcon sx={{ mr: 0.5 }} fontSize="inherit" />
                 Mechanic to Cloud
             </Link>
@@ -34,7 +34,7 @@ export default function IconBreadcrumbs() {
                     color: "rgb(86, 96, 86)",
                     fontFamily: 'platypi',
                 }}
-                href="https://www.mechanictocloud.com/about">
+                href="/about">
                 <InfoIcon sx={{ mr: 0.5 }} fontSize="inherit" />
                 About
             </Link>
@@ -47,7 +47,7 @@ export default function IconBreadcrumbs() {
                     fontFamily: 'platypi',
                 }}
                 
-                href="https://www.mechanictocloud.com/projects">
+                href="/projects">
                 <PaletteIcon sx={{ mr: 0.5 }} fontSize="inherit" />
                 Projects
             </Link>
@@ -59,7 +59,7 @@ export default function IconBreadcrumbs() {
                     color: "rgb(86, 96, 86)",
                     fontFamily: 'platypi',
                 }}
-                href="https://www.mechanictocloud.com/journal">
+                href="/journal">
                 <LibraryBooksIcon sx={{ mr: 0.5 }} fontSize="inherit" />
                 Journal
             </Link> 

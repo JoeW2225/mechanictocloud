@@ -19,7 +19,7 @@ export const PastFour = () => {
 
             <div className="w-full flex justify-center">
                 <Image className='rounded-xl sm:w-[450px]'
-                    src="https://www.mechanictocloud.com/images/coding.webp"
+                    src="/images/coding.webp"
                     alt='A laptop on a wooden table with some coding'
                     height={350}
                     width={300}

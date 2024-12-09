@@ -15,7 +15,7 @@ export const PastOne = () => {
 
             <div className="w-full flex justify-center">
                 <Image className='rounded-xl sm:w-[450px]'
-                    src="https://www.mechanictocloud.com/images/landroverfix.webp"
+                    src="/images/landroverfix.webp"
                     alt='Me fixing a landrover'
                     height={350}
                     width={300}

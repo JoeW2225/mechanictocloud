@@ -14,13 +14,13 @@ export const PastTwo = () => {
 
             <div className="w-full flex justify-center">
                 <Image className='rounded-xl lg:hidden'
-                    src="https://www.mechanictocloud.com/images/direction.webp"
+                    src="/images/direction.webp"
                     alt='A silhouette of a post with multiple signs pointing in different directions'
                     height={350}
                     width={300}
                     />
                 <Image className='rounded-xl hidden lg:block'
-                    src="https://www.mechanictocloud.com/images/directionLandscape.webp"
+                    src="/images/directionLandscape.webp"
                     alt='A silhouette of a post with multiple signs pointing in different directions'
                     height={350}
                     width={500}
