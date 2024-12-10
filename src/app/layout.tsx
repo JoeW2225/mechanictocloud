@@ -19,11 +19,11 @@ export default function RootLayout({ children,}: Readonly<{ children: React.Reac
   return (
     <html lang="en" suppressHydrationWarning>
       <body  className={`${platypi.variable} antialiased bg-[rgb(var(--background))] text-[rgb(var(--foreground))]`}>
-        <Providers>
-            <AppRouterCacheProvider>
-              {children}
-            </AppRouterCacheProvider>
-        </Providers>
+      <AppRouterCacheProvider>
+          <Providers>
+                {children}
+          </Providers>
+        </AppRouterCacheProvider>
       </body>
     </html>
   );

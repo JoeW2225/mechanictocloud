@@ -7,18 +7,20 @@
     --foreground: 86, 96, 86; /* MUI GREY */
     --textColorLight: 23, 58, 94, 1; /* DARK BLUE (works in light-mode) */
     --paper-bg: 255, 255, 255; /* WHITE */
+    --background: 204, 233, 249; /* TROPICAL BLUE */
   }
 
   .dark {
     --foreground: 86, 96, 86; /* MUI GREY */
     --paper-bg: 237 237 237; /* LIGHT GREY FOR TEXT */
     --textColorDark: 23, 58, 94, 1; /* DARK BLUE (works in dark-mode) */
+    --background: 2, 9, 47; /* TANGAROA BLUE */
   }
 }
 
 /* Light theme animation */
 body {
-  background: linear-gradient(90deg, #cce9f9, #cce9f9, #cce9f9);
+  background: rgb(var(--background-color-light));
   background-size: 300% 300%;
   min-height: 100vh;
   width: 100%;
@@ -27,8 +29,8 @@ body {
 }
 
 /* Dark theme animation */
-:root[class~="dark"] body {
-  background: #02092f;
+body.dark {
+  background: rgb(var(--background-color-dark));
   position: absolute;
   z-index: -9;
 
