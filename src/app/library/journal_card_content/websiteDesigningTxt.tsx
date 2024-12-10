@@ -12,7 +12,7 @@ export const designingTxt = () => {
             Once that was complete and I had a rough layout of what the site was going to look like, it was onto Figma.
         </Typography>
         <Typography component='div' sx={{ marginBottom: 2, fontFamily: 'platypi', color: 'rgb(var(--textColorLight))'  }}>
-            I feel as though I had barely touched the surface with Figma, the sheer about of tools/plug-ins with this 
+            I felt as though I had barely scratched the surface with Figma, the sheer about of tools/plug-ins with this 
             site is next level. I used Figma Jam, downloading and using the MUI symbols widget for the icons 
             and Brandfetch plugin for the logos. It was good to spend time during this designing phase, 
             as previously I always felt very pressured to quickly get ideas down as 

@@ -8,8 +8,12 @@ import { ThemeProvider } from '@mui/system';
 import homeTheme from '../styles/homeTheme';
 import ProjectAccordions from '../components/ProjectAccord';
 import containers from '@/app/styles/containers.module.css';
+import { useEffect } from 'react';
 
 export default function Projects() {
+    useEffect(() => {
+        document.title = 'Projects | Mechanic to Cloud'
+    })
     return (
         <>
             <NavBar/> <MobNavBar/>

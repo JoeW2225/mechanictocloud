@@ -15,7 +15,7 @@ export const approachTxt = () => {
             JS, HTML, CSS, relational databases to React, Next and authentication tools like Clerk.
         </Typography>
         <Typography component='div' sx={{ marginBottom: 2, fontFamily: 'platypi', color: 'rgb(var(--textColorLight))'  }}>
-            This was a pretty intense course and coming from no coding experience what-so-ever, 
+            This was a pretty intense course and coming from zero coding experience, 
             proved to be a tough challenge indeed. The skills, knowledge and resources that I 
             had gathered from doing this course would be invaluable for when I was to go back to doing the CRC.
         </Typography>
@@ -29,7 +29,7 @@ export const approachTxt = () => {
             </Typography>
             <Typography component='div' sx={{ marginBottom: 2, fontFamily: 'platypi', color: 'rgb(var(--textColorLight))'  }}>
                 2- Going through the motions of setting up the Cloud side again. I was pretty rusty on the AWS side 
-                of things as the course didn&#39;t touch on Cloud. It had be quite sometime since I had studied/worked 
+                of things as the course didn&#39;t touch on Cloud. It had been quite sometime since I had studied/worked 
                 with AWS and like most things when you leave it for awhile, skill fade sets in.
             </Typography>
             <Typography component='div' sx={{ marginBottom: 2, fontFamily: 'platypi', color: 'rgb(var(--textColorLight))'  }}>

@@ -11,9 +11,12 @@ import GrowAbout from '../components/papers/about_papers/aboutOne';
 import GrowPast from '../components/papers/about_papers/aboutTwo';
 import GrowPresent from '../components/papers/about_papers/aboutThree';
 import GrowFuture from '../components/papers/about_papers/aboutFour';
-
+import { useEffect } from 'react';
 
 export default function About() {
+    useEffect(() => {
+        document.title = 'About | Mechanic to Cloud'
+    },[]);
     return (
         <>
             <NavBar/> <MobNavBar/>

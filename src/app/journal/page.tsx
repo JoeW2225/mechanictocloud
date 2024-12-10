@@ -13,8 +13,12 @@ import WebsiteDesigningCard from '../components/journal_cards/WebsiteDesigning';
 import WebsiteSetupCard from '../components/journal_cards/WebsiteSetup';
 import WebsiteInitialCard from '../components/journal_cards/WebsiteInitial';
 import WebsiteBuildCard from '../components/journal_cards/WebsiteBuild';
+import { useEffect } from 'react';
 
 export default function Journal() {
+    useEffect(() =>{
+        document.title = 'Journal | Mechanic to Cloud'
+    },[])
     return (
         <>
             <NavBar/> <MobNavBar/>
