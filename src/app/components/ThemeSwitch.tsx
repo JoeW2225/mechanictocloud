@@ -12,7 +12,7 @@ export default function ThemeSwitch() {
     useEffect(() =>  setMounted(true), [])
 
     if (!mounted) return (
-        <Image
+        <Image className='rounded-full'
         src="/images/logo.webp"
         width={36}
         height={36}

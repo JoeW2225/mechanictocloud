@@ -6,7 +6,7 @@ export const BuildTxt = () => {
         <>
         <Typography component='div'  sx={{ marginBottom: 2, fontFamily: 'platypi', color: 'rgb(var(--textColorLight))'  }}>
         I was enjoying implementing the features for the site and seeing it all come together. 
-        Along the way I was learning things I had either put off previously or never had the chance to see. 
+        Along the way I was learning things I had not previously seen. 
         Whether this was TypeScript errors, CSS properties or Next/React features/bugs. 
         </Typography>
         <Typography component='div' sx={{ marginBottom: 2, fontFamily: 'platypi', color: 'rgb(var(--textColorLight))'  }}>
@@ -26,7 +26,7 @@ export const BuildTxt = () => {
         I would include extra MUI elements such as the Grow transition feature. 
         </Typography>
         <Typography component='div' sx={{ marginBottom: 2, fontFamily: 'platypi', color: 'rgb(var(--textColorLight))'  }}>
-        Over all it has been a great learning opportunity and I still have many notes to properly write-up.
+        Over all it has been a great learning opportunity and I still have many notes to write-up.
         </Typography>
         </>
         
