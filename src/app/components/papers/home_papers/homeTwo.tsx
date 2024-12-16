@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 import Paper from '@mui/material/Paper';
 import { ThemeProvider } from '@mui/system';
 import { Grow, Box } from '@mui/material';
-import homeTheme from '@/app/styles/homeTheme';
+import homeTheme from '../../../styles/homeTheme';
 import LayersIcon from '@mui/icons-material/Layers';
 import { Code } from '@mui/icons-material';
 import TableRowsIcon from '@mui/icons-material/TableRows';

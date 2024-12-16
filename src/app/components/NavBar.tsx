@@ -1,6 +1,6 @@
 import IconBreadcrumbs from './IconBreadCrumbs'
 import Image from 'next/image'
-import navBlurBg from '@/app/styles/navBlurBg.module.css'
+import navBlurBg from '../styles/navBlurBg.module.css'
 
 export const NavBar = () => {
     return (

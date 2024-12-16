@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 import Paper from '@mui/material/Paper';
 import { ThemeProvider } from '@mui/system';
 import { Grow, Box } from '@mui/material';
-import homeTheme from '@/app/styles/homeTheme';
+import homeTheme from '../../../styles/homeTheme';
 import HistoryIcon from '@mui/icons-material/History';
 import TodayIcon from '@mui/icons-material/Today';
 import FastForwardIcon from '@mui/icons-material/FastForward';

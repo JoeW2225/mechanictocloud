@@ -7,7 +7,7 @@ import MuiAccordion, { AccordionProps } from '@mui/material/Accordion';
 import MuiAccordionSummary, { AccordionSummaryProps, accordionSummaryClasses } from '@mui/material/AccordionSummary';
 import MuiAccordionDetails from '@mui/material/AccordionDetails';
 import { ThemeProvider } from '@mui/system';
-import homeTheme from '@/app/styles/homeTheme';
+import homeTheme from '../styles/homeTheme';
 import { MechanicToCloudTxt } from '@/app/library/proj_accord_content/projectTxt1';
 import ProjectOne from './project_img_growers/ProjectImgs1';
 import ProjectTwo from './project_img_growers/ProjectImgs2';

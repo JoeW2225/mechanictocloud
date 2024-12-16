@@ -6,7 +6,7 @@ import { FooterCount } from '../components/footerCount'
 import * as React from 'react';
 import { ThemeProvider } from '@mui/system';
 import homeTheme from '../styles/homeTheme';
-import containers from '@/app/styles/containers.module.css';
+import containers from '../styles/containers.module.css';
 import GrowWelcome from '../components/papers/home_papers/homeOne';
 import GrowName from '../components/papers/home_papers/homeTwo';
 import GrowIntro from '../components/papers/home_papers/homeThree';

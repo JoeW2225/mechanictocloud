@@ -7,7 +7,7 @@ import * as React from 'react';
 import { ThemeProvider } from '@mui/system';
 import homeTheme from '../styles/homeTheme';
 import ProjectAccordions from '../components/ProjectAccord';
-import containers from '@/app/styles/containers.module.css';
+import containers from '../styles/containers.module.css';
 import { useEffect } from 'react';
 
 export default function Projects() {

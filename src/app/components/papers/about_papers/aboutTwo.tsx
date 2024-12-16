@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 import Paper from '@mui/material/Paper';
 import { ThemeProvider } from '@mui/system';
 import { Grow, Box } from '@mui/material';
-import homeTheme from '@/app/styles/homeTheme';
+import homeTheme from '../../../styles/homeTheme';
 import BuildCircleIcon from '@mui/icons-material/BuildCircle';
 import { PastOne } from '@/app/library/about_paper_content/aboutTxt';
 import { PastTwo } from '@/app/library/about_paper_content/aboutTxtTwo';

@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 import Paper from '@mui/material/Paper';
 import { ThemeProvider } from '@mui/system';
 import { Grow, Box } from '@mui/material';
-import homeTheme from '@/app/styles/homeTheme';
+import homeTheme from '../../../styles/homeTheme';
 import CloudIcon from '@mui/icons-material/Cloud';
 import DesignServicesIcon from '@mui/icons-material/DesignServices';
 import BrushIcon from '@mui/icons-material/Brush';

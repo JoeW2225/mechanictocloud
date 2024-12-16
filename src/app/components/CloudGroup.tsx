@@ -1,4 +1,4 @@
-import cloudAni from '@/app/styles/cloudAni.module.css'
+import cloudAni from '../styles/cloudAni.module.css'
 
 export default function CloudGroup() {
     return(

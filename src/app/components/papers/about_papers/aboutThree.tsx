@@ -4,7 +4,7 @@ import Paper from '@mui/material/Paper';
 import { Grow, Box } from '@mui/material';
 import { ThemeProvider } from '@mui/system';
 import { useEffect } from 'react';
-import homeTheme from '@/app/styles/homeTheme';
+import homeTheme from '../../../styles/homeTheme';
 import ArchitectureIcon from '@mui/icons-material/Architecture';
 import * as HorizontalDivider from '../../paragDividerH';
 import TrendingUpIcon from '@mui/icons-material/TrendingUp';
