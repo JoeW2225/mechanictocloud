@@ -3,7 +3,7 @@ import * as React from 'react';
 import { useEffect, createContext, useContext } from 'react';
 import { Grow, Box } from '@mui/material';
 import Link from 'next/link'
-import doorGlow from '@/app/styles/doorGlow.module.css'
+import doorGlow from '../styles/doorGlow.module.css'
 
 export const CountContext = createContext<{count: number; increaseCount: () => void;}>
 ({

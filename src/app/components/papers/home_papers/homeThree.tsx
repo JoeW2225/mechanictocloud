@@ -6,10 +6,10 @@ import { ThemeProvider } from '@mui/system';
 import { useEffect } from 'react';
 import homeTheme from '../../../styles/homeTheme';
 import ArticleIcon from '@mui/icons-material/Article';
-import { Introduction } from '@/app/library/introTxt';
+import { Introduction } from '../../../library/introTxt';
 import VerticalDivider from'@/app/components/paragDividerV';
 import PersonAddIcon from '@mui/icons-material/PersonAdd';
-import { IntroductionTwo } from '@/app/library/introTxtTwo';
+import { IntroductionTwo } from '../../../library/introTxtTwo';
 
 
 const introPaper = (

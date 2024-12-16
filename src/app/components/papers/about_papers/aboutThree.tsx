@@ -8,9 +8,8 @@ import homeTheme from '../../../styles/homeTheme';
 import ArchitectureIcon from '@mui/icons-material/Architecture';
 import * as HorizontalDivider from '../../paragDividerH';
 import TrendingUpIcon from '@mui/icons-material/TrendingUp';
-import { PresentOne } from '@/app/library/about_paper_content/aboutTxtSix';
-import { PresentTwo } from '@/app/library/about_paper_content/aboutTxtSeven';
-
+import { PresentOne } from '../../../library/about_paper_content/aboutTxtSix';
+import { PresentTwo } from '../../../library/about_paper_content/aboutTxtSeven';
 
 const presentPaper = (
 

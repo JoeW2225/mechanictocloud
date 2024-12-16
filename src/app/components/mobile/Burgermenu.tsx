@@ -6,7 +6,7 @@ import PaletteIcon from '@mui/icons-material/Palette';
 import BungalowIcon from '@mui/icons-material/Bungalow';
 import InfoIcon from '@mui/icons-material/Info';
 import { Spin as Hamburger } from 'hamburger-react'
-import burgerMenuStyle from '@/app/styles/burgerMenuStyle.module.css'
+import burgerMenuStyle from '../../styles/burgerMenuStyle.module.css'
 
 const pages = [
   { title: "Mechanic to Cloud", href:'/home', Icon: BungalowIcon },

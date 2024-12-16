@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import navBlurBg from '@/app/styles/navBlurBg.module.css'
+import navBlurBg from '../../styles/navBlurBg.module.css'
 import MobCrumbs from './MobCrumbs'
 import BurgerMenu from './Burgermenu'
 

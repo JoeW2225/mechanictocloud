@@ -1,5 +1,5 @@
 'use client'
-import footBlurBg from '@/app/styles/footBlurBg.module.css'
+import footBlurBg from '../styles/footBlurBg.module.css'
 import * as React from 'react';
 import { useEffect } from 'react';
 import { Grow, Box } from '@mui/material';

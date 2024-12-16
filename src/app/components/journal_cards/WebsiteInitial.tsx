@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 import { Grow, Box } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import { ThemeProvider } from '@mui/system';
-import homeTheme from '@/app/styles/homeTheme';
+import homeTheme from '../../styles/homeTheme';
 import Card from '@mui/material/Card';
 import CardHeader from '@mui/material/CardHeader';
 import CardMedia from '@mui/material/CardMedia';
@@ -16,7 +16,7 @@ import IconButton, { IconButtonProps } from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ConstructionIcon from '@mui/icons-material/Construction';
-import * as Initial from '@/app/library/journal_card_content/websiteInitialTxt'
+import * as Initial from '../../library/journal_card_content/websiteInitialTxt'
 
 interface ExpandMoreProps extends IconButtonProps {
     expand: boolean;
