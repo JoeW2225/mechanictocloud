@@ -52,9 +52,19 @@ export const MechanicToCloudTxt = () => {
                     </ul>
                 </Typography>
                 <Typography component='div' sx={{ marginBottom: 2, fontFamily: 'platypi', color: 'rgb(var(--textColorLight))'  }}>
-                There are particular areas I may do differently, such as writing the back-end logic in Typescript rather than Python. 
-                The Database I may choose a relational Postgres one. As for the website build, this will be constructed using Next.js, 
-                Material UI as well as CSS and Tailwind (tapping into the skills learnt from my software developer course). 
+                There are particular areas I did differently. For example the website build, this was made using Next.js, 
+                Material UI as well as CSS and Tailwind (tapping into the skills learnt from my software developer course).<br></br>For the 
+                cloud, I added AWS CodeBuild and SSM Parameter Store (storing env variables) to automate the static folder creation 
+                (npm run build). 
+                </Typography>
+                <Typography component='div' sx={{ marginBottom: 2, fontFamily: 'platypi', color: 'rgb(var(--textColorLight))'  }}>
+                Most of these changes I had to do differently from the guide primarily due to the fact I was using Next.js, not vanilla
+                HTML, CSS and JavaScript.
+                </Typography>
+                <Typography component='div' sx={{ marginBottom: 2, fontFamily: 'platypi', color: 'rgb(var(--textColorLight))'  }}>
+                The following images below are the cloud architectural digrams with draw.io, along with my low and high-fidelity designs using 
+                Ok! So... and Figma. As you can see, the general structure of the site is very similar to the final product, but I have
+                also made a number of changes during the building stage.
                 </Typography>
             </div>
         </div>
