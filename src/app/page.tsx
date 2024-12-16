@@ -1,9 +1,9 @@
 
 import { DoorTransition } from './components/doorTransition';
 import CloudGroup from './components/CloudGroup';
-import { FooterCount } from '@/app/components/footerCount'
+import { FooterCount } from './components/footerCount'
 import TitleTransition from './components/TitleTransition';
-import { CountProvider } from '@/app/components/doorTransition'
+import { CountProvider } from './components/doorTransition'
 
 
 
