@@ -7,7 +7,7 @@ import { useEffect } from 'react';
 import homeTheme from '../../../styles/homeTheme';
 import ArticleIcon from '@mui/icons-material/Article';
 import { Introduction } from '../../../library/introTxt';
-import VerticalDivider from'@/app/components/paragDividerV';
+import VerticalDivider from'../../../components/paragDividerV';
 import PersonAddIcon from '@mui/icons-material/PersonAdd';
 import { IntroductionTwo } from '../../../library/introTxtTwo';
 
