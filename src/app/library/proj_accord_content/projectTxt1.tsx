@@ -53,9 +53,12 @@ export const MechanicToCloudTxt = () => {
                 </Typography>
                 <Typography component='div' sx={{ marginBottom: 2, fontFamily: 'platypi', color: 'rgb(var(--textColorLight))'  }}>
                 There are particular areas I did differently. For example the website build, this was made using Next.js, 
-                Material UI as well as CSS and Tailwind (tapping into the skills learnt from my software developer course).<br></br>For the 
-                cloud, I added AWS CodeBuild and SSM Parameter Store (storing env variables) to automate the static folder creation 
-                (npm run build). 
+                Material UI as well as CSS and Tailwind (tapping into the skills learnt from my software developer course).
+                </Typography>
+                <Typography component='div' sx={{ marginBottom: 2, fontFamily: 'platypi', color: 'rgb(var(--textColorLight))'  }}>
+                For the cloud, I added AWS CodeBuild and SSM Parameter Store (storing env variables) to automate the static folder creation 
+                (npm run build). The CodeBuild phase was particularly challenging as I had never used it before, especially getting my head around
+                the Buildspec.yml file (This file being a set of build instructions).
                 </Typography>
                 <Typography component='div' sx={{ marginBottom: 2, fontFamily: 'platypi', color: 'rgb(var(--textColorLight))'  }}>
                 Most of these changes I had to do differently from the guide primarily due to the fact I was using Next.js, not vanilla
