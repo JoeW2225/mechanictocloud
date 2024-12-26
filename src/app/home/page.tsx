@@ -10,6 +10,7 @@ import containers from '../styles/containers.module.css';
 import GrowWelcome from '../components/papers/home_papers/homeOne';
 import GrowName from '../components/papers/home_papers/homeTwo';
 import GrowIntro from '../components/papers/home_papers/homeThree';
+import { CountProvider } from '../components/doorTransition';
 
 
 export default function Homepage() {
@@ -29,7 +30,9 @@ export default function Homepage() {
                 </main>
             </ThemeProvider>
             <footer className='sticky bottom-0 flex justify-center items-center w-full h-20 z-10'>
-                <FooterCount/>
+                <CountProvider>
+                    <FooterCount/>
+                </CountProvider>
             </footer>
             </>
         

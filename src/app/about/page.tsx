@@ -12,6 +12,7 @@ import GrowPast from '../components/papers/about_papers/aboutTwo';
 import GrowPresent from '../components/papers/about_papers/aboutThree';
 import GrowFuture from '../components/papers/about_papers/aboutFour';
 import { useEffect } from 'react';
+import { CountProvider } from '../components/doorTransition';
 
 export default function About() {
     useEffect(() => {
@@ -34,7 +35,9 @@ export default function About() {
                 </main>
             </ThemeProvider>
             <footer className='sticky bottom-0 flex justify-center items-center w-full h-20 z-10'>
-                <FooterCount/>
+                <CountProvider>
+                    <FooterCount/>
+                </CountProvider>
             </footer>
             </>
         

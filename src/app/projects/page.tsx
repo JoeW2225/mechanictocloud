@@ -9,6 +9,7 @@ import homeTheme from '../styles/homeTheme';
 import ProjectAccordions from '../components/ProjectAccord';
 import containers from '../styles/containers.module.css';
 import { useEffect } from 'react';
+import { CountProvider } from '../components/doorTransition';
 
 export default function Projects() {
     useEffect(() => {
@@ -26,7 +27,9 @@ export default function Projects() {
                 </main>
             </ThemeProvider>
             <footer className='sticky bottom-0 flex justify-center items-center w-full h-20 z-6'>
-                <FooterCount/>
+                <CountProvider>
+                    <FooterCount/>
+                </CountProvider>
             </footer>
             </>
         
