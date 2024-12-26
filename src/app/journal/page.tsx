@@ -14,6 +14,7 @@ import WebsiteSetupCard from '../components/journal_cards/WebsiteSetup';
 import WebsiteInitialCard from '../components/journal_cards/WebsiteInitial';
 import WebsiteBuildCard from '../components/journal_cards/WebsiteBuild';
 import { useEffect } from 'react';
+import { CountProvider } from '../components/doorTransition';
 
 export default function Journal() {
     useEffect(() =>{
@@ -55,7 +56,9 @@ export default function Journal() {
         </main>
             </ThemeProvider>
             <footer className='sticky bottom-0 flex justify-center items-center w-full h-20 z-10'>
-                <FooterCount/>
+                <CountProvider>
+                    <FooterCount/>
+                </CountProvider>
             </footer>
             </>
         

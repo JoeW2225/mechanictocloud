@@ -4,9 +4,12 @@ import * as React from 'react';
 import { useEffect } from 'react';
 import { Grow, Box } from '@mui/material';
 import { CountContext } from './doorTransition';
+import { useContext } from 'react';
 
 const FooterElement = () => {
-    const { count } = React.useContext(CountContext)
+    const { count } = useContext(CountContext)
+    console.log(count);
+
     return (
     <footer className={footBlurBg.footContainer}>
             <div className={footBlurBg.footBlur}>
