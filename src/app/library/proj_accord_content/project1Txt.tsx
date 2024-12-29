@@ -52,22 +52,29 @@ export const MechanicToCloudTxt = () => {
                     </ul>
                 </Typography>
                 <Typography component='div' sx={{ marginBottom: 2, fontFamily: 'platypi', color: 'rgb(var(--textColorLight))'  }}>
+                <h2 className='text-2xl mb-3'>My Implementation</h2>
                 There are particular areas I did differently. For example the website build, this was made using Next.js, 
                 Material UI as well as CSS and Tailwind (tapping into the skills learnt from my software developer course).
                 </Typography>
                 <Typography component='div' sx={{ marginBottom: 2, fontFamily: 'platypi', color: 'rgb(var(--textColorLight))'  }}>
                 For the cloud, I added AWS CodeBuild and SSM Parameter Store (storing env variables) to automate the static folder creation 
                 (npm run build). The CodeBuild phase was particularly challenging as I had never used it before, especially getting my head around
-                the Buildspec.yml file (This file being a set of build instructions).
+                the buildspec.yml file (This file being a set of build instructions).
                 </Typography>
                 <Typography component='div' sx={{ marginBottom: 2, fontFamily: 'platypi', color: 'rgb(var(--textColorLight))'  }}>
                 Most of these changes I had to do differently from the guide primarily due to the fact I was using Next.js, not vanilla
                 HTML, CSS and JavaScript.
                 </Typography>
                 <Typography component='div' sx={{ marginBottom: 2, fontFamily: 'platypi', color: 'rgb(var(--textColorLight))'  }}>
-                The following images below are the cloud architectural digrams with draw.io, along with my low and high-fidelity designs using 
-                Ok! So... and Figma. As you can see, the general structure of the site is very similar to the final product, but I have
-                also made a number of changes during the building stage.
+                I decided after the hosting stage to do the CI/CD pipeline first, then the API for the counter. 
+                Reason being is that the counter was going to require myself editing the code base, followed by pushing the changes. 
+                I though this would be a good way of putting my freshly implemented pipeline to the test.
+                </Typography>
+                <Typography component='div' sx={{ marginBottom: 2, fontFamily: 'platypi', color: 'rgb(var(--textColorLight))'  }}>
+                <h2 className='text-2xl mb-3'>Diagrams & Designs</h2>
+                The following images below are the cloud architectural diagrams with draw.io, along with my low and high-fidelity 
+                designs using Ok! So... and Figma.<br></br> As you can see, the general structure of the site is very similar to the 
+                final product, but I have also made a number of changes during the building stage.
                 </Typography>
             </div>
         </div>
