@@ -4,11 +4,11 @@ import Paper from '@mui/material/Paper';
 import Image from 'next/image';
 
 const lowFidHome = (
-  <Paper sx={{width: {xs: 'auto' ,lg:'70vw'} , borderRadius: '16px', margin: 1}} elevation={4}>
+  <Paper sx={{width: {xs: 'auto' ,lg:'25vw'} , borderRadius: '16px', margin: 1}} elevation={4}>
     <Image className='rounded-xl sm:w-full'
             src="/images/logo.webp"
             alt='blah'
-            layout='responsive'
+            style={{ width: '100%', height: 'auto' }}
             height={250}
             width={300}
                     />

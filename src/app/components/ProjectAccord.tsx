@@ -8,10 +8,10 @@ import MuiAccordionSummary, { AccordionSummaryProps, accordionSummaryClasses } f
 import MuiAccordionDetails from '@mui/material/AccordionDetails';
 import { ThemeProvider } from '@mui/system';
 import homeTheme from '../styles/homeTheme';
-import { MechanicToCloudTxt } from '../library/proj_accord_content/projectTxt1';
+import { MechanicToCloudTxt } from '../library/proj_accord_content/project1Txt';
+import { Tbc } from '../library/proj_accord_content/project2Txt';
 import ProjectOne from './project_img_growers/ProjectImgs1';
 import ProjectTwo from './project_img_growers/ProjectImgs2';
-import { Tbc } from '../library/proj_accord_content/projectTxt2';
 import HourglassTopIcon from '@mui/icons-material/HourglassTop';
 
 
