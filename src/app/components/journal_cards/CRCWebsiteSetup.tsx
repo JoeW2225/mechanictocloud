@@ -15,8 +15,8 @@ import Avatar from '@mui/material/Avatar';
 import IconButton, { IconButtonProps } from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import DesignServicesIcon from '@mui/icons-material/DesignServices';
-import * as Designing from '../../library/journal_card_content/websiteDesigningTxt'
+import SettingsIcon from '@mui/icons-material/Settings';
+import * as Setup from '../../library/journal_card_content/websiteSetupTxt'
 
 interface ExpandMoreProps extends IconButtonProps {
     expand: boolean;
@@ -34,7 +34,7 @@ const ExpandMore = styled(({ expand, ...other }: ExpandMoreProps) => (
     transform: expand ? 'rotate(180deg)' : 'rotate(0deg)',
 }));
 
-export const WebsiteDesigningCard = () => {
+export const WebsiteSetupCard = () => {
     const [expanded, setExpanded] = React.useState(false);
 
     const handleExpandClick = () => {
@@ -58,24 +58,24 @@ export const WebsiteDesigningCard = () => {
 
             avatar={
             <Avatar sx={{ backgroundColor:'rgba(5, 126, 208)' }} aria-label="plus in a screen">
-                <DesignServicesIcon />
+                <SettingsIcon />
             </Avatar>
             }
-            title="The Site: Design"
-            subheader=" 5th November, 2024"
+            title="The Site: Setup"
+            subheader=" 8th November, 2024"
         />
         <CardMedia
             component="img"
             height="194"
-            image="/images/design.webp"
-            alt="photo of a screen with many different icons"
+            image="/images/setup.webp"
+            alt="small plant in vase"
         />
         <CardContent>
             <Typography variant="body2" sx={{ fontFamily: 'platypi', color: 'rgb(var(--foreground))' }}>
-                Cloud Resume Challenge: Designing
+            Cloud Resume Challenge
             </Typography>
-            <Typography variant="body2" sx={{ marginTop: 1, fontFamily: 'platypi', color: 'rgb(var(--foreground))' }}>
-                Bringing the ideas to life with low fidelity designs with Ok,So… and high fidelity using Figma. 
+            <Typography variant="body2" sx={{ marginTop: 2, fontFamily: 'platypi', color: 'rgb(var(--foreground))' }}>
+            Implementing agile practices using Kanban, source control with GitHub and setting up the Next App.
             </Typography>
         </CardContent>
         <CardActions disableSpacing>
@@ -83,7 +83,7 @@ export const WebsiteDesigningCard = () => {
             expand={expanded}
             onClick={handleExpandClick}
             aria-expanded={expanded}
-            aria-label="show more"
+            aria-label="a man connecting up a amp on stage"
             >
             <ExpandMoreIcon />
             </ExpandMore>
@@ -96,10 +96,10 @@ export const WebsiteDesigningCard = () => {
                 marginBottom: 2, 
                 fontFamily: 'platypi', 
                 color: 'rgb(var(--foreground))' 
-                }}>The designing</Typography>
+                }}>The Setup</Typography>
             
-            <Designing.designingTxt />
-            
+            <Setup.setupTxt />
+
             </CardContent>
 
         </Collapse>
@@ -107,7 +107,7 @@ export const WebsiteDesigningCard = () => {
         </ThemeProvider>
     );
 }
-export default function GrowDesignCard() {
+export default function GrowSetupCard() {
     // Set animation to false before component mount:
     const [checked, setChecked] = React.useState(false)
 
@@ -130,11 +130,11 @@ export default function GrowDesignCard() {
         ></Box>
         <Grow
         in={checked}
-        timeout={3000}
+        timeout={1000}
         style={{ transformOrigin: 'center center' }}
         >
             <div>
-                <WebsiteDesigningCard />
+                <WebsiteSetupCard />
             </div>
             
         </Grow>

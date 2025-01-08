@@ -15,8 +15,8 @@ import Avatar from '@mui/material/Avatar';
 import IconButton, { IconButtonProps } from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import SettingsIcon from '@mui/icons-material/Settings';
-import * as Setup from '../../library/journal_card_content/websiteSetupTxt'
+import ConstructionIcon from '@mui/icons-material/Construction';
+import * as Initial from '../../library/journal_card_content/websiteInitialTxt'
 
 interface ExpandMoreProps extends IconButtonProps {
     expand: boolean;
@@ -34,7 +34,7 @@ const ExpandMore = styled(({ expand, ...other }: ExpandMoreProps) => (
     transform: expand ? 'rotate(180deg)' : 'rotate(0deg)',
 }));
 
-export const WebsiteSetupCard = () => {
+export const WebsiteInitialCard = () => {
     const [expanded, setExpanded] = React.useState(false);
 
     const handleExpandClick = () => {
@@ -58,24 +58,24 @@ export const WebsiteSetupCard = () => {
 
             avatar={
             <Avatar sx={{ backgroundColor:'rgba(5, 126, 208)' }} aria-label="plus in a screen">
-                <SettingsIcon />
+                <ConstructionIcon />
             </Avatar>
             }
-            title="The Site: Setup"
-            subheader=" 8th November, 2024"
+            title="The Site: Initial Build"
+            subheader=" 12th November, 2024"
         />
         <CardMedia
             component="img"
             height="194"
-            image="/images/setup.webp"
-            alt="small plant in vase"
+            image="/images/initialBuild.webp"
+            alt="a stack of wooden beams overlapping each other to form a tower"
         />
         <CardContent>
             <Typography variant="body2" sx={{ fontFamily: 'platypi', color: 'rgb(var(--foreground))' }}>
-            Cloud Resume Challenge: Setup
+                Cloud Resume Challenge
             </Typography>
             <Typography variant="body2" sx={{ marginTop: 2, fontFamily: 'platypi', color: 'rgb(var(--foreground))' }}>
-            Implementing agile practices using Kanban, source control with GitHub and setting up the Next App.
+            Creating the sites landing and home pages, getting a feel for the design and features I planned to include. 
             </Typography>
         </CardContent>
         <CardActions disableSpacing>
@@ -83,7 +83,7 @@ export const WebsiteSetupCard = () => {
             expand={expanded}
             onClick={handleExpandClick}
             aria-expanded={expanded}
-            aria-label="a man connecting up a amp on stage"
+            aria-label="show more"
             >
             <ExpandMoreIcon />
             </ExpandMore>
@@ -96,10 +96,9 @@ export const WebsiteSetupCard = () => {
                 marginBottom: 2, 
                 fontFamily: 'platypi', 
                 color: 'rgb(var(--foreground))' 
-                }}>The Setup</Typography>
-            
-            <Setup.setupTxt />
+                }}>Initial Steps</Typography>
 
+            <Initial.InitialTxt />
             </CardContent>
 
         </Collapse>
@@ -130,11 +129,11 @@ export default function GrowSetupCard() {
         ></Box>
         <Grow
         in={checked}
-        timeout={1000}
+        timeout={2000}
         style={{ transformOrigin: 'center center' }}
         >
             <div>
-                <WebsiteSetupCard />
+                <WebsiteInitialCard />
             </div>
             
         </Grow>

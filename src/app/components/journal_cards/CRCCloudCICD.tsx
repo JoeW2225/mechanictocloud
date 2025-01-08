@@ -15,8 +15,8 @@ import Avatar from '@mui/material/Avatar';
 import IconButton, { IconButtonProps } from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import FoundationIcon from '@mui/icons-material/Foundation';
-import * as Build from '../../library/journal_card_content/websiteBuildTxt'
+import ConstructionIcon from '@mui/icons-material/Construction';
+import * as Initial from '../../library/journal_card_content/websiteInitialTxt'
 
 interface ExpandMoreProps extends IconButtonProps {
     expand: boolean;
@@ -34,7 +34,7 @@ const ExpandMore = styled(({ expand, ...other }: ExpandMoreProps) => (
     transform: expand ? 'rotate(180deg)' : 'rotate(0deg)',
 }));
 
-export const WebsiteBuildCard = () => {
+export const CloudCICDCard = () => {
     const [expanded, setExpanded] = React.useState(false);
 
     const handleExpandClick = () => {
@@ -58,25 +58,24 @@ export const WebsiteBuildCard = () => {
 
             avatar={
             <Avatar sx={{ backgroundColor:'rgba(5, 126, 208)' }} aria-label="plus in a screen">
-                <FoundationIcon />
+                <ConstructionIcon />
             </Avatar>
             }
-            title="The Site: Main Build"
-            subheader=" 2nd December, 2024"
+            title="Cloud: CICD Pipeline"
+            subheader=" 18th December, 2024"
         />
         <CardMedia
             component="img"
             height="194"
-            image="/images/mainBuild.webp"
-            alt="construction site"
+            image="/images/pipeline.webp"
+            alt="An industrial area with large upright tanks and a pipe going from left to right."
         />
         <CardContent>
             <Typography variant="body2" sx={{ fontFamily: 'platypi', color: 'rgb(var(--foreground))' }}>
-            Cloud Resume Challenge: Main Build
+                Cloud Resume Challenge
             </Typography>
             <Typography variant="body2" sx={{ marginTop: 2, fontFamily: 'platypi', color: 'rgb(var(--foreground))' }}>
-            Getting the bulk of the site completed and adding content. Taking longer than anticipated, 
-            but turning out better than I had envisioned.
+            Automating manual processes using services such as AWS CodePipeline, AWS CodeBuild, Github and more. 
             </Typography>
         </CardContent>
         <CardActions disableSpacing>
@@ -97,10 +96,9 @@ export const WebsiteBuildCard = () => {
                 marginBottom: 2, 
                 fontFamily: 'platypi', 
                 color: 'rgb(var(--foreground))' 
-                }}>The Main Build</Typography>
-            
-            <Build.BuildTxt />
-            
+                }}>Initial Steps</Typography>
+
+            <Initial.InitialTxt />
             </CardContent>
 
         </Collapse>
@@ -108,7 +106,7 @@ export const WebsiteBuildCard = () => {
         </ThemeProvider>
     );
 }
-export default function GrowSetupCard() {
+export default function GrowPipelineCard() {
     // Set animation to false before component mount:
     const [checked, setChecked] = React.useState(false)
 
@@ -131,11 +129,11 @@ export default function GrowSetupCard() {
         ></Box>
         <Grow
         in={checked}
-        timeout={3000}
+        timeout={2000}
         style={{ transformOrigin: 'center center' }}
         >
             <div>
-                <WebsiteBuildCard />
+                <CloudCICDCard />
             </div>
             
         </Grow>

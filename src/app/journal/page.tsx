@@ -6,15 +6,19 @@ import { FooterCount } from '../components/footerCount'
 import * as React from 'react';
 import { ThemeProvider } from '@mui/system';
 import homeTheme from '../styles/homeTheme';
-// import containers from '@/app/styles/containers.module.css';
-import FirstProjectCard from '../components/journal_cards/FirstProject';
-import WebsitePlanningCard from '../components/journal_cards/WebsitePlanning';
-import WebsiteDesigningCard from '../components/journal_cards/WebsiteDesigning';
-import WebsiteSetupCard from '../components/journal_cards/WebsiteSetup';
-import WebsiteInitialCard from '../components/journal_cards/WebsiteInitial';
-import WebsiteBuildCard from '../components/journal_cards/WebsiteBuild';
 import { useEffect } from 'react';
 import { CountProvider } from '../components/doorTransition';
+//! Journal card imports in order:
+import FirstProjectCard from '../components/journal_cards/FirstProject';
+import CRCWebsitePlanningCard from '../components/journal_cards/CRCWebsitePlanning';
+import CRCWebsiteDesigningCard from '../components/journal_cards/CRCWebsiteDesigning';
+import CRCWebsiteSetupCard from '../components/journal_cards/CRCWebsiteSetup';
+import CRCWebsiteInitialCard from '../components/journal_cards/CRCWebsiteInitial';
+import CRCWebsiteBuildCard from '../components/journal_cards/CRCWebsiteBuild';
+import CRCCloudHosting from '../components/journal_cards/CRCCloudHosting'
+import CRCCloudCICD from '../components/journal_cards/CRCCloudCICD'
+import CRCCloudAPIVisitor from '../components/journal_cards/CRCCloudAPIVisitor'
+import CRCCloudRefection from '../components/journal_cards/CRCCloudReflection'
 
 export default function Journal() {
     useEffect(() =>{
@@ -30,28 +34,36 @@ export default function Journal() {
         <div className='w-full flex justify-center'>
             <div className='hidden sm:block'>
                 <FirstProjectCard />
-                <WebsiteSetupCard />
+                <CRCWebsiteSetupCard />
+                <CRCCloudHosting/>
+                <CRCCloudRefection />
             </div>
 
             <div className='hidden sm:block'>
-                <WebsitePlanningCard />
-                <WebsiteInitialCard />
+                <CRCWebsitePlanningCard />
+                <CRCWebsiteInitialCard />
+                <CRCCloudCICD />
             </div>
             
             <div className='hidden sm:block'>
-                <WebsiteDesigningCard />
-                <WebsiteBuildCard />
+                <CRCWebsiteDesigningCard />
+                <CRCWebsiteBuildCard />
+                <CRCCloudAPIVisitor />
             </div>
         </div>
 
       {/* MOBILE VIEW */}
         <div className="flex flex-col items-center sm:hidden">
             <FirstProjectCard />
-            <WebsitePlanningCard />
-            <WebsiteDesigningCard />
-            <WebsiteSetupCard />
-            <WebsiteInitialCard />
-            <WebsiteBuildCard />
+            <CRCWebsitePlanningCard />
+            <CRCWebsiteDesigningCard />
+            <CRCWebsiteSetupCard />
+            <CRCWebsiteInitialCard />
+            <CRCWebsiteBuildCard />
+            <CRCCloudHosting />
+            <CRCCloudCICD />
+            <CRCCloudAPIVisitor />
+            <CRCCloudRefection />
         </div>
         </main>
             </ThemeProvider>

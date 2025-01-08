@@ -15,8 +15,8 @@ import Avatar from '@mui/material/Avatar';
 import IconButton, { IconButtonProps } from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import ChecklistRtlIcon from '@mui/icons-material/ChecklistRtl';
-import * as Planning from '../../library/journal_card_content/websitePlanningTxt'
+import ConstructionIcon from '@mui/icons-material/Construction';
+import * as Initial from '../../library/journal_card_content/websiteInitialTxt'
 
 interface ExpandMoreProps extends IconButtonProps {
     expand: boolean;
@@ -34,7 +34,7 @@ const ExpandMore = styled(({ expand, ...other }: ExpandMoreProps) => (
     transform: expand ? 'rotate(180deg)' : 'rotate(0deg)',
 }));
 
-export const WebsitePlanningCard = () => {
+export const CloudReflectionCard = () => {
     const [expanded, setExpanded] = React.useState(false);
 
     const handleExpandClick = () => {
@@ -58,24 +58,24 @@ export const WebsitePlanningCard = () => {
 
             avatar={
             <Avatar sx={{ backgroundColor:'rgba(5, 126, 208)' }} aria-label="plus in a screen">
-                <ChecklistRtlIcon />
+                <ConstructionIcon />
             </Avatar>
             }
-            title="The Site: Planning"
-            subheader=" 4th November, 2024"
+            title="Cloud: Reflection"
+            subheader=" 28th December, 2024"
         />
         <CardMedia
             component="img"
             height="194"
-            image="/images/planning.webp"
-            alt="white board with many post-it notes"
+            image="/images/reflection.webp"
+            alt="A puddle on a footpath with the reflection of a clock tower in it."
         />
         <CardContent>
             <Typography variant="body2" sx={{ fontFamily: 'platypi', color: 'rgb(var(--foreground))' }}>
-            Cloud Resume Challenge: Planning
+                Cloud Resume Challenge
             </Typography>
             <Typography variant="body2" sx={{ marginTop: 2, fontFamily: 'platypi', color: 'rgb(var(--foreground))' }}>
-            Determining the required tech stack for the frontend, backend, and cloud infrastructure. 
+            A brief look back at what has been achieved so far. 
             </Typography>
         </CardContent>
         <CardActions disableSpacing>
@@ -96,10 +96,9 @@ export const WebsitePlanningCard = () => {
                 marginBottom: 2, 
                 fontFamily: 'platypi', 
                 color: 'rgb(var(--foreground))' 
-                }}>The Planning</Typography>
-            
-            <Planning.planningTxt />
-            
+                }}>My Brief Reflection</Typography>
+
+            <Initial.InitialTxt />
             </CardContent>
 
         </Collapse>
@@ -107,7 +106,7 @@ export const WebsitePlanningCard = () => {
         </ThemeProvider>
     );
 }
-export default function GrowPlanCard() {
+export default function GrowReflectionCard() {
     // Set animation to false before component mount:
     const [checked, setChecked] = React.useState(false)
 
@@ -134,7 +133,7 @@ export default function GrowPlanCard() {
         style={{ transformOrigin: 'center center' }}
         >
             <div>
-                <WebsitePlanningCard />
+                <CloudReflectionCard />
             </div>
             
         </Grow>

@@ -15,9 +15,8 @@ import Avatar from '@mui/material/Avatar';
 import IconButton, { IconButtonProps } from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import AddToQueueIcon from '@mui/icons-material/AddToQueue';
-import * as Approach from '../../library/journal_card_content/firstPrjTxt'
-
+import DesignServicesIcon from '@mui/icons-material/DesignServices';
+import * as Designing from '../../library/journal_card_content/websiteDesigningTxt'
 
 interface ExpandMoreProps extends IconButtonProps {
     expand: boolean;
@@ -35,8 +34,7 @@ const ExpandMore = styled(({ expand, ...other }: ExpandMoreProps) => (
     transform: expand ? 'rotate(180deg)' : 'rotate(0deg)',
 }));
 
-
-const FirstProjectCard = () => {
+export const WebsiteDesigningCard = () => {
     const [expanded, setExpanded] = React.useState(false);
 
     const handleExpandClick = () => {
@@ -60,25 +58,24 @@ const FirstProjectCard = () => {
 
             avatar={
             <Avatar sx={{ backgroundColor:'rgba(5, 126, 208)' }} aria-label="plus in a screen">
-                <AddToQueueIcon />
+                <DesignServicesIcon />
             </Avatar>
             }
-            title="My First Project: CRC"
-            subheader=" 1st November, 2024"
+            title="The Site: Design"
+            subheader=" 5th November, 2024"
         />
         <CardMedia
             component="img"
             height="194"
-            image="/images/growing.webp"
-            alt="small plant held in someones hand"
+            image="/images/design.webp"
+            alt="photo of a screen with many different icons"
         />
         <CardContent>
             <Typography variant="body2" sx={{ fontFamily: 'platypi', color: 'rgb(var(--foreground))' }}>
                 Cloud Resume Challenge
             </Typography>
-            <Typography variant="body2" sx={{ marginTop: 2, fontFamily: 'platypi', color: 'rgb(var(--foreground))' }}>
-            After completing my Software Developer course, this is my first, true, independent project. 
-            I am looking forward to putting the skills and lessons learnt into practice.  
+            <Typography variant="body2" sx={{ marginTop: 1, fontFamily: 'platypi', color: 'rgb(var(--foreground))' }}>
+                Bringing the ideas to life with low fidelity designs with Ok,So… and high fidelity using Figma. 
             </Typography>
         </CardContent>
         <CardActions disableSpacing>
@@ -99,9 +96,9 @@ const FirstProjectCard = () => {
                 marginBottom: 2, 
                 fontFamily: 'platypi', 
                 color: 'rgb(var(--foreground))' 
-                }}>The Approach</Typography>
+                }}>The designing</Typography>
             
-            <Approach.approachTxt />
+            <Designing.designingTxt />
             
             </CardContent>
 
@@ -110,8 +107,7 @@ const FirstProjectCard = () => {
         </ThemeProvider>
     );
 }
-
-export default function GrowFirstProj() {
+export default function GrowDesignCard() {
     // Set animation to false before component mount:
     const [checked, setChecked] = React.useState(false)
 
@@ -134,11 +130,11 @@ export default function GrowFirstProj() {
         ></Box>
         <Grow
         in={checked}
-        timeout={1000}
+        timeout={3000}
         style={{ transformOrigin: 'center center' }}
         >
             <div>
-                <FirstProjectCard />
+                <WebsiteDesigningCard />
             </div>
             
         </Grow>
