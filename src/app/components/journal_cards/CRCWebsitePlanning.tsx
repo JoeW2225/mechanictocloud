@@ -15,8 +15,8 @@ import Avatar from '@mui/material/Avatar';
 import IconButton, { IconButtonProps } from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import ConstructionIcon from '@mui/icons-material/Construction';
-import * as Initial from '../../library/journal_card_content/websiteInitialTxt'
+import ChecklistRtlIcon from '@mui/icons-material/ChecklistRtl';
+import * as Planning from '../../library/journal_card_content/websitePlanningTxt'
 
 interface ExpandMoreProps extends IconButtonProps {
     expand: boolean;
@@ -34,7 +34,7 @@ const ExpandMore = styled(({ expand, ...other }: ExpandMoreProps) => (
     transform: expand ? 'rotate(180deg)' : 'rotate(0deg)',
 }));
 
-export const WebsiteInitialCard = () => {
+export const WebsitePlanningCard = () => {
     const [expanded, setExpanded] = React.useState(false);
 
     const handleExpandClick = () => {
@@ -58,24 +58,24 @@ export const WebsiteInitialCard = () => {
 
             avatar={
             <Avatar sx={{ backgroundColor:'rgba(5, 126, 208)' }} aria-label="plus in a screen">
-                <ConstructionIcon />
+                <ChecklistRtlIcon />
             </Avatar>
             }
-            title="The Site: Initial Build"
-            subheader=" 12th November, 2024"
+            title="The Site: Planning"
+            subheader=" 4th November, 2024"
         />
         <CardMedia
             component="img"
             height="194"
-            image="/images/initialBuild.webp"
-            alt="a stack of wooden beams overlapping each other to form a tower"
+            image="/images/planning.webp"
+            alt="white board with many post-it notes"
         />
         <CardContent>
             <Typography variant="body2" sx={{ fontFamily: 'platypi', color: 'rgb(var(--foreground))' }}>
-                Cloud Resume Challenge: Intial Build
+            Cloud Resume Challenge
             </Typography>
             <Typography variant="body2" sx={{ marginTop: 2, fontFamily: 'platypi', color: 'rgb(var(--foreground))' }}>
-            Creating the sites landing and home pages, getting a feel for the design and features I planned to include. 
+            Determining the required tech stack for the frontend, backend, and cloud infrastructure. 
             </Typography>
         </CardContent>
         <CardActions disableSpacing>
@@ -96,9 +96,10 @@ export const WebsiteInitialCard = () => {
                 marginBottom: 2, 
                 fontFamily: 'platypi', 
                 color: 'rgb(var(--foreground))' 
-                }}>Initial Steps</Typography>
-
-            <Initial.InitialTxt />
+                }}>The Planning</Typography>
+            
+            <Planning.planningTxt />
+            
             </CardContent>
 
         </Collapse>
@@ -106,7 +107,7 @@ export const WebsiteInitialCard = () => {
         </ThemeProvider>
     );
 }
-export default function GrowSetupCard() {
+export default function GrowPlanCard() {
     // Set animation to false before component mount:
     const [checked, setChecked] = React.useState(false)
 
@@ -133,7 +134,7 @@ export default function GrowSetupCard() {
         style={{ transformOrigin: 'center center' }}
         >
             <div>
-                <WebsiteInitialCard />
+                <WebsitePlanningCard />
             </div>
             
         </Grow>

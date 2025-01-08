@@ -15,9 +15,8 @@ import Avatar from '@mui/material/Avatar';
 import IconButton, { IconButtonProps } from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import AddToQueueIcon from '@mui/icons-material/AddToQueue';
-import * as Approach from '../../library/journal_card_content/firstPrjTxt'
-
+import ConstructionIcon from '@mui/icons-material/Construction';
+import * as Initial from '../../library/journal_card_content/websiteInitialTxt'
 
 interface ExpandMoreProps extends IconButtonProps {
     expand: boolean;
@@ -35,8 +34,7 @@ const ExpandMore = styled(({ expand, ...other }: ExpandMoreProps) => (
     transform: expand ? 'rotate(180deg)' : 'rotate(0deg)',
 }));
 
-
-const FirstProjectCard = () => {
+export const CloudAPICard = () => {
     const [expanded, setExpanded] = React.useState(false);
 
     const handleExpandClick = () => {
@@ -60,25 +58,24 @@ const FirstProjectCard = () => {
 
             avatar={
             <Avatar sx={{ backgroundColor:'rgba(5, 126, 208)' }} aria-label="plus in a screen">
-                <AddToQueueIcon />
+                <ConstructionIcon />
             </Avatar>
             }
-            title="My First Project: CRC"
-            subheader=" 1st November, 2024"
+            title="Cloud: API & Visitor Count"
+            subheader=" 26th December, 2024"
         />
         <CardMedia
             component="img"
             height="194"
-            image="/images/growing.webp"
-            alt="small plant held in someones hand"
+            image="/images/apiGateway.webp"
+            alt="A side shot of a highway with cars driving into tolls"
         />
         <CardContent>
             <Typography variant="body2" sx={{ fontFamily: 'platypi', color: 'rgb(var(--foreground))' }}>
                 Cloud Resume Challenge
             </Typography>
             <Typography variant="body2" sx={{ marginTop: 2, fontFamily: 'platypi', color: 'rgb(var(--foreground))' }}>
-            After completing my Software Developer course, this is my first, true, independent project. 
-            I am looking forward to putting the skills and lessons learnt into practice.  
+            Utilising AWS to run serverless functions, store and retrieve data and more. 
             </Typography>
         </CardContent>
         <CardActions disableSpacing>
@@ -99,10 +96,9 @@ const FirstProjectCard = () => {
                 marginBottom: 2, 
                 fontFamily: 'platypi', 
                 color: 'rgb(var(--foreground))' 
-                }}>The Approach</Typography>
-            
-            <Approach.approachTxt />
-            
+                }}>From Codebase to Database</Typography>
+
+            <Initial.InitialTxt />
             </CardContent>
 
         </Collapse>
@@ -110,8 +106,7 @@ const FirstProjectCard = () => {
         </ThemeProvider>
     );
 }
-
-export default function GrowFirstProj() {
+export default function GrowAPICard() {
     // Set animation to false before component mount:
     const [checked, setChecked] = React.useState(false)
 
@@ -134,11 +129,11 @@ export default function GrowFirstProj() {
         ></Box>
         <Grow
         in={checked}
-        timeout={1000}
+        timeout={2000}
         style={{ transformOrigin: 'center center' }}
         >
             <div>
-                <FirstProjectCard />
+                <CloudAPICard />
             </div>
             
         </Grow>
