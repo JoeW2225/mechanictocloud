@@ -15,8 +15,8 @@ import Avatar from '@mui/material/Avatar';
 import IconButton, { IconButtonProps } from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import ConstructionIcon from '@mui/icons-material/Construction';
-import * as Initial from '../../library/journal_card_content/websiteInitialTxt'
+import HttpIcon from '@mui/icons-material/Http';
+import * as Pipeline from '../../library/journal_card_content/cloudAPIVisitorTxt'
 
 interface ExpandMoreProps extends IconButtonProps {
     expand: boolean;
@@ -58,7 +58,7 @@ export const CloudAPICard = () => {
 
             avatar={
             <Avatar sx={{ backgroundColor:'rgba(5, 126, 208)' }} aria-label="plus in a screen">
-                <ConstructionIcon />
+                <HttpIcon />
             </Avatar>
             }
             title="Cloud: API & Visitor Count"
@@ -75,7 +75,7 @@ export const CloudAPICard = () => {
                 Cloud Resume Challenge
             </Typography>
             <Typography variant="body2" sx={{ marginTop: 2, fontFamily: 'platypi', color: 'rgb(var(--foreground))' }}>
-            Utilising AWS to run serverless functions, store and retrieve data and more. 
+            Utilising AWS to run serverless functions, store/retrieve data and testing with Postman.
             </Typography>
         </CardContent>
         <CardActions disableSpacing>
@@ -98,7 +98,7 @@ export const CloudAPICard = () => {
                 color: 'rgb(var(--foreground))' 
                 }}>From Codebase to Database</Typography>
 
-            <Initial.InitialTxt />
+            <Pipeline.ApiTxt />
             </CardContent>
 
         </Collapse>
