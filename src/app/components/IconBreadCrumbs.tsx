@@ -64,8 +64,12 @@ export default function IconBreadcrumbs() {
                 Journal
             </Link> 
             <div>
-            <a className='p-2 rounded-lg hover:bg-blue-200 dark:hover:bg-white transition-colors' href='https://www.linkedin.com/in/joe-winter24/'><LinkedInIcon /></a>
-            <a className='p-2 rounded-lg hover:bg-blue-200 dark:hover:bg-white transition-colors' href='https://github.com/JoeW2225'><GitHubIcon /></a>
+            <a className='p-2 rounded-lg hover:bg-blue-200 dark:hover:bg-white transition-colors' href='https://www.linkedin.com/in/joe-winter24/'
+                target='_blank'
+                rel='noopener noreferrer'><LinkedInIcon /></a>
+            <a className='p-2 rounded-lg hover:bg-blue-200 dark:hover:bg-white transition-colors' href='https://github.com/JoeW2225'
+                target='_blank'
+                rel='noopener noreferrer'><GitHubIcon /></a>
             </div>
             <ThemeSwitch/>
         </Breadcrumbs>

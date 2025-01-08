@@ -15,8 +15,8 @@ import Avatar from '@mui/material/Avatar';
 import IconButton, { IconButtonProps } from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import ConstructionIcon from '@mui/icons-material/Construction';
-import * as Initial from '../../library/journal_card_content/websiteInitialTxt'
+import PauseIcon from '@mui/icons-material/Pause';
+import * as Reflection from '../../library/journal_card_content/cloudReflectionTxt'
 
 interface ExpandMoreProps extends IconButtonProps {
     expand: boolean;
@@ -58,7 +58,7 @@ export const CloudReflectionCard = () => {
 
             avatar={
             <Avatar sx={{ backgroundColor:'rgba(5, 126, 208)' }} aria-label="plus in a screen">
-                <ConstructionIcon />
+                <PauseIcon />
             </Avatar>
             }
             title="Cloud: Reflection"
@@ -75,7 +75,7 @@ export const CloudReflectionCard = () => {
                 Cloud Resume Challenge
             </Typography>
             <Typography variant="body2" sx={{ marginTop: 2, fontFamily: 'platypi', color: 'rgb(var(--foreground))' }}>
-            A brief look back at what has been achieved so far. 
+            With much accomplished, I look towards my next steps in this project. 
             </Typography>
         </CardContent>
         <CardActions disableSpacing>
@@ -98,7 +98,7 @@ export const CloudReflectionCard = () => {
                 color: 'rgb(var(--foreground))' 
                 }}>My Brief Reflection</Typography>
 
-            <Initial.InitialTxt />
+            <Reflection.ReflectionTxt />
             </CardContent>
 
         </Collapse>

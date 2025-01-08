@@ -15,8 +15,8 @@ import Avatar from '@mui/material/Avatar';
 import IconButton, { IconButtonProps } from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import ConstructionIcon from '@mui/icons-material/Construction';
-import * as Initial from '../../library/journal_card_content/websiteInitialTxt'
+import RepartitionIcon from '@mui/icons-material/Repartition';
+import * as CICD from '../../library/journal_card_content/cloudCICDTxt'
 
 interface ExpandMoreProps extends IconButtonProps {
     expand: boolean;
@@ -58,7 +58,7 @@ export const CloudCICDCard = () => {
 
             avatar={
             <Avatar sx={{ backgroundColor:'rgba(5, 126, 208)' }} aria-label="plus in a screen">
-                <ConstructionIcon />
+                <RepartitionIcon />
             </Avatar>
             }
             title="Cloud: CICD Pipeline"
@@ -96,9 +96,9 @@ export const CloudCICDCard = () => {
                 marginBottom: 2, 
                 fontFamily: 'platypi', 
                 color: 'rgb(var(--foreground))' 
-                }}>Initial Steps</Typography>
+                }}>Implementing a CICD Pipeline</Typography>
 
-            <Initial.InitialTxt />
+            <CICD.CICDTxt />
             </CardContent>
 
         </Collapse>

@@ -15,8 +15,8 @@ import Avatar from '@mui/material/Avatar';
 import IconButton, { IconButtonProps } from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import ConstructionIcon from '@mui/icons-material/Construction';
-import * as Initial from '../../library/journal_card_content/websiteInitialTxt'
+import CloudUploadIcon from '@mui/icons-material/CloudUpload';
+import * as Hosting from '../../library/journal_card_content/cloudHostingTxt'
 
 interface ExpandMoreProps extends IconButtonProps {
     expand: boolean;
@@ -58,7 +58,7 @@ export const CloudHostingCard = () => {
 
             avatar={
             <Avatar sx={{ backgroundColor:'rgba(5, 126, 208)' }} aria-label="plus in a screen">
-                <ConstructionIcon />
+                <CloudUploadIcon />
             </Avatar>
             }
             title="Cloud: Hosting"
@@ -75,7 +75,7 @@ export const CloudHostingCard = () => {
                 Cloud Resume Challenge
             </Typography>
             <Typography variant="body2" sx={{ marginTop: 2, fontFamily: 'platypi', color: 'rgb(var(--foreground))' }}>
-            Hosting the site on AWS, using services such as Route 53, CloudFront, S3 and more.  
+            Hosting the site on AWS, using services such as Route 53, CloudFront and S3.  
             </Typography>
         </CardContent>
         <CardActions disableSpacing>
@@ -98,7 +98,7 @@ export const CloudHostingCard = () => {
                 color: 'rgb(var(--foreground))' 
                 }}>Going Online</Typography>
 
-            <Initial.InitialTxt />
+            <Hosting.HostingTxt />
             </CardContent>
 
         </Collapse>
