@@ -8,7 +8,7 @@ export const MechanicToCloudTxt = () => {
                 <Typography component='div' sx={{ marginBottom: 2, fontFamily: 'platypi', color: 'rgb(var(--textColorLight))'  }}>
                 <strong>The Cloud Resume Challenge</strong>, created by Forrest Brazeal, is a project designed to help people gain 
                 practical experience with cloud technologies and stand out as job candidates. It&#39;s not a traditional tutorial, 
-                but rather a set of goals you need to achieve by figuring things out yourself.
+                but rather a set of goals you need to achieve by figuring things out yourself. testing
                 </Typography>
                 <Typography component='div' sx={{ marginBottom: 2, fontFamily: 'platypi', color: 'rgb(var(--textColorLight))'  }}>
                     <h2 className='text-2xl'>Why is it Different?</h2>
